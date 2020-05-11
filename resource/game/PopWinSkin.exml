@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="PopWinSkin" width="500" height="500" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+    <e:Group id="group" left="0" top="0" bottom="0" right="0">
+        <e:Rect id="back" width="100%" height="100%" fillAlpha="0.5" strokeColor="0x424242" enabled="true" anchorOffsetX="0" fillColor="0xe510a2"></e:Rect>
+        <e:Label id="topLabel" text="弹出窗口" verticalAlign="middle" textAlign="center"
+                 size="50" horizontalCenter="0" verticalCenter="0" fontFamily="SimHei"></e:Label>
+			<e:Button id="closeBtn" label="X" width="61" top="19" right="23"/>
+    </e:Group>
+</e:Skin>

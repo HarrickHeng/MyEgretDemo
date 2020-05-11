@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="SecSceneSkin" width="720" height="1280" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+    <e:Group id="group" top="0" bottom="0" left="0" right="0">
+        <e:Rect id="back" width="100%" height="100%" fillAlpha="0.5" strokeColor="0x424242" enabled="true" fillColor="0x2b72db" touchEnabled="true"></e:Rect>
+        <e:Label id="topLabel" text="第二个场景"
+                 size="50" horizontalCenter="0" top="43" fontFamily="SimHei"></e:Label>
+			<e:Button id="gotoBtn" label="1" horizontalCenter="0" verticalCenter="383"/>
+    </e:Group>
+</e:Skin>

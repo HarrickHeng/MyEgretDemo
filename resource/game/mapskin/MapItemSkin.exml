@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="MapItemSkin" width="80" height="80" currentState="unselect" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" states="selected,unselect" >
+	<e:Rect id="bgColor" strokeWeight="1.5" top="0" left="0" right="0" bottom="0" fillColor="0xffffff" strokeColor.selected="0xfc0707" strokeWeight.selected="2"/>
+	<e:Label id="posLab" text="1,2" size="30" horizontalCenter="0" verticalCenter="0" textColor="0x000000" touchEnabled="false"/>
+	<e:Label id="FLab" text="8" size="30" left="2" top="2" touchEnabled="false" textColor="0xff9900"/>
+	<e:Label id="GLab" text="3" size="30" touchEnabled="false" textColor="0xfc00c8" left="0" bottom="0"/>
+	<e:Label id="HLab" text="5" size="30" textColor="0xffb900" touchEnabled="false" right="0" bottom="0"/>
+</e:Skin>
