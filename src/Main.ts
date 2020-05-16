@@ -33,6 +33,7 @@ class Main extends eui.UILayer {
         super.createChildren();
 
         FsmSet.init();
+        // let aa = new OpMain();
         egret.lifecycle.addLifecycleListener((context) => {
             // custom lifecycle plugin
         })
@@ -61,21 +62,21 @@ class Main extends eui.UILayer {
         this.createGameScene();
         await platform.login();
         const userInfo = await platform.getUserInfo();
-        console.log(userInfo);
+        // console.log(userInfo);
 
-        let fsm = FsmSet.BusinessFsm;
-        let wood = new Good(1, 'wood', 10, 100, 1);
-        let rice = new Good(2, 'rice', 15, 100, 1);
-        let Beijing = new City(1, 'Beijing', 1000, 30000, [wood, rice]);
-        let Guangzhou = new City(2, 'Guangzhou', 800, 30000, [wood]);
-        let trader_1 = new Trader(1, 'harrick', 2000, []);
-        fsm.cityArr.push(Beijing);
-        fsm.cityArr.push(Guangzhou);
-        fsm.traderArr.push(trader_1);
-        trader_1.traderAI();
-        trader_1.traderAI();
-        trader_1.traderAI();
-        fsm.readAcBook();
+        // let fsm = FsmSet.BusinessFsm;
+        // let wood = new Good(1, 'wood', 10, 100, 1);
+        // let rice = new Good(2, 'rice', 15, 100, 1);
+        // let Beijing = new City(1, 'Beijing', 1000, 30000, [wood, rice]);
+        // let Guangzhou = new City(2, 'Guangzhou', 800, 30000, [wood]);
+        // let trader_1 = new Trader(1, 'harrick', 2000, []);
+        // fsm.cityArr.push(Beijing);
+        // fsm.cityArr.push(Guangzhou);
+        // fsm.traderArr.push(trader_1);
+        // trader_1.traderAI();
+        // trader_1.traderAI();
+        // trader_1.traderAI();
+        // fsm.readAcBook();
     }
 
     private async loadResource() {

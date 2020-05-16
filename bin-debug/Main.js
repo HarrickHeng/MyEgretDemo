@@ -79,6 +79,7 @@ var Main = (function (_super) {
     Main.prototype.createChildren = function () {
         _super.prototype.createChildren.call(this);
         FsmSet.init();
+        // let aa = new OpMain();
         egret.lifecycle.addLifecycleListener(function (context) {
             // custom lifecycle plugin
         });
@@ -99,7 +100,7 @@ var Main = (function (_super) {
     };
     Main.prototype.runGame = function () {
         return __awaiter(this, void 0, void 0, function () {
-            var userInfo, fsm, wood, rice, Beijing, Guangzhou, trader_1;
+            var userInfo;
             return __generator(this, function (_a) {
                 switch (_a.label) {
                     case 0: return [4 /*yield*/, this.loadResource()];
@@ -112,20 +113,6 @@ var Main = (function (_super) {
                         return [4 /*yield*/, platform.getUserInfo()];
                     case 3:
                         userInfo = _a.sent();
-                        console.log(userInfo);
-                        fsm = FsmSet.BusinessFsm;
-                        wood = new Good(1, 'wood', 10, 100, 1);
-                        rice = new Good(2, 'rice', 15, 100, 1);
-                        Beijing = new City(1, 'Beijing', 1000, 30000, [wood, rice]);
-                        Guangzhou = new City(2, 'Guangzhou', 800, 30000, [wood]);
-                        trader_1 = new Trader(1, 'harrick', 2000, []);
-                        fsm.cityArr.push(Beijing);
-                        fsm.cityArr.push(Guangzhou);
-                        fsm.traderArr.push(trader_1);
-                        trader_1.traderAI();
-                        trader_1.traderAI();
-                        trader_1.traderAI();
-                        fsm.readAcBook();
                         return [2 /*return*/];
                 }
             });

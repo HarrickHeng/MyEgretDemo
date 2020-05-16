@@ -51,15 +51,24 @@ class City extends CommerBody {
         recgood = changePrice ? good : new Good(good.id, good.name, good.price, good.count, good.demandTend);
         if (!this._curGoodIdx) this._curGoodIdx = this.getGoodIdx(recgood);
         if (this._curGoodIdx != -1) {
-            let sum = 0;
+            let sum = 0, peopleD = this._people * recgood.demandTend
             let count = this._goodlist[this._curGoodIdx].count;
-            for (let i = recgood.count; i > 0; i--) {
-                sum += (this._people * recgood.demandTend) / count;
-                count--;
-            }
-            return recgood.price = Math.floor(sum / recgood.count);
+            if (count <= 0) return null;
+            for (let i = 0; i <= count; ++i)
+                sum += peopleD / (count - i + 1);
+            return recgood.price = Math.floor(sum / count);
         } else
             return null;
+    }
+
+    public getMAXGoodCount(good: Good, money: number): number {
+        let recgood: Good = new Good(good.id, good.name, good.price, good.count, good.demandTend);
+        let sum = 0, peopleD = this._people * recgood.demandTend
+        let count = this._goodlist[this._curGoodIdx].count;
+        for (let i = 0; i <= count; ++i) {
+            sum += peopleD / (count - i + 1);
+            if (sum >= money) return (count - i);
+        }
     }
 
     public checkBuy(good: Good): boolean {

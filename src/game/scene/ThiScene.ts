@@ -17,7 +17,9 @@ class ThiScene extends Scene {
     public find3Btn: eui.Button;
     public resetBtn: eui.Button;
     public viewBtn: eui.Button;
-    public btnArr: any[];
+    public primBtn: eui.Button;
+    public breBtn: eui.Button;
+    public btnArr: eui.Button[];
 
     public posLab: eui.Group;
     public startPos: eui.Label;
@@ -28,23 +30,23 @@ class ThiScene extends Scene {
         super();
         let fsm = FsmSet.MapFsm;
         this.skinName = ThiSceneSkin;
-        this.btnArr = [this.gotoBtn, this.setSBtn, this.setEBtn, this.stoneBtn, this.findBtn, this.find2Btn, this.find3Btn, this.resetBtn, this.viewBtn];
-        //根据MapSC设置地图大小
+        this.btnArr = [this.gotoBtn, this.setSBtn, this.setEBtn, this.stoneBtn,
+        this.findBtn, this.find2Btn, this.find3Btn, this.resetBtn, this.viewBtn,
+        this.breBtn, this.primBtn];
         this.mapData = this.setListFun(this.mapList, MapItem, this.mapData);
+        this.mapList.useVirtualLayout = true;
+        //根据MapSC设置地图大小
         fsm.mapRow = Math.floor(this.MapSC.width / this.mapItemT.width);
         fsm.mapCol = Math.floor(this.MapSC.height / this.mapItemT.height);
         this.setMapLayout();
-        this.createMap();
-        console.log("group is ", this.group);
     }
 
     public onComplete() {
-        egret.log("第三个场景加载完成");
     }
 
     public onAdd() {
         this.addEvent();
-        this.initPosInfo();
+        this.reset();
     }
 
     private addEvent() {
@@ -151,17 +153,35 @@ class ThiScene extends Scene {
                     this.find3Fun();
                 break;
             case this.resetBtn:
-                this.mapData = null;
-                fsm.clearData();
-                this.initPosInfo();
-                this.createMap();
+                this.reset();
                 break;
             case this.viewBtn:
                 fsm.showInfo = !fsm.showInfo;
                 this.mapData.source = fsm.mapData.source;
                 break;
+            case this.breBtn:
+                if (fsm.startMapItem && fsm.endMapItem) {
+                    let res = fsm.bresenHamLine();
+                    for (let MI of res) {
+                        fsm.MIS(MI, MI_STATUS.LINED);
+                    }
+                    fsm.startMapItem = fsm.endMapItem = null;
+                }
+                break;
+            case this.primBtn:
+                this.stoneFlag = !this.stoneFlag;
+                this.reset();
+                fsm.primMap();
+                break;
         }
         this.updatePosInfo();
+    }
+
+    private reset(): void {
+        let fsm = FsmSet.MapFsm;
+        fsm.clearData();
+        this.initPosInfo();
+        this.createMap();
     }
 
     //直接演示
@@ -174,7 +194,6 @@ class ThiScene extends Scene {
             fsm.MIS(resMI, MI_STATUS.LINED);
             resMI = resMI.parent;
         }
-        // fsm.bresenHamLine();
         fsm.startMapItem = fsm.endMapItem = null;
     }
 
@@ -222,7 +241,7 @@ class ThiScene extends Scene {
     private loadMapItem(row, col): void {
         let mapArr = [];
         let len = row * col;
-        for (let i = 0; i < len; i++) {
+        for (let i = 0; i < len; ++i) {
             let rValue = Math.ceil((i + 1) / row);
             let cValue = i - (rValue - 1) * col + 1;
             let obj = {
@@ -233,8 +252,6 @@ class ThiScene extends Scene {
             }; //TODO...
             mapArr.push(obj);
         }
-        if (!this.mapData)
-            this.mapData = this.setListFun(this.mapList, MapItem, this.mapData);
-        this.mapData.replaceAll(mapArr);
+        this.mapData.source = mapArr;
     }
 }

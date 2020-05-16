@@ -15,7 +15,6 @@ var FirstScene = (function (_super) {
         _this._touchStatus = false;
         _this._distance = new egret.Point();
         _this.skinName = FirstSceneSkin;
-        console.log("group is ", _this.group);
         return _this;
     }
     FirstScene.prototype.onComplete = function () {

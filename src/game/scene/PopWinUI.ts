@@ -5,7 +5,6 @@ class PopWinUI extends Scene {
     public constructor() {
         super();
         this.skinName = PopWinSkin;
-        console.log("group is ", this.group);
     }
 
     public onComplete() {

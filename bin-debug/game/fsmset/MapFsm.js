@@ -5,8 +5,6 @@ var MapFsm = (function () {
     function MapFsm() {
         /**详细参数 */
         this.showInfo = false;
-        /////////////////////////////////////////布兰森汉姆算法部分///////////////////////////////////
-        this.BH_List = [];
     }
     Object.defineProperty(MapFsm.prototype, "mapData", {
         get: function () {
@@ -161,19 +159,13 @@ var MapFsm = (function () {
     /**搜寻周围地图块 */
     MapFsm.prototype.findNeighbors = function () {
         var MIarr = [];
-        for (var i = -1; i < 2; i++) {
-            for (var j = -1; j < 2; j++) {
-                if (i == 0 && j == 0)
-                    continue;
-                var row = this._curMapItem.row + i;
-                var col = this._curMapItem.col + j;
-                if (row < 1 || row > this.mapRow || col < 1 || col > this.mapCol)
-                    continue; //是否过界
-                var id = this.getIdByOS(this._curMapItem, j, i);
-                var MI = this._mapData.source[id - 1];
-                if (MI && this.checkMI(MI))
-                    MIarr.push(MI);
-            }
+        var offX = [0, 0, 1, -1, -1, 1, -1, 1], offY = [1, -1, 0, 0, 1, 1, -1, -1];
+        var len = offX.length;
+        for (var i = 0; i < len; ++i) {
+            var id = this.getIdByOS(this._curMapItem, offX[i], offY[i]);
+            var MI = this._mapData.source[id - 1] ? this._mapData.source[id - 1] : null;
+            if (MI && this.checkMI(MI))
+                MIarr.push(MI);
         }
         return MIarr;
     };
@@ -198,6 +190,11 @@ var MapFsm = (function () {
     /**获得周围的地图块ID */
     MapFsm.prototype.getIdByOS = function (curMI, offsetX, offsetY) {
         var id;
+        //是否过界
+        if (curMI.row + offsetY < 1 || curMI.row + offsetY > this._mapRow)
+            return null;
+        if (curMI.col + offsetX < 1 || curMI.col + offsetX > this._mapCol)
+            return null;
         switch (offsetX) {
             case -1:
                 if (offsetY == -1)
@@ -274,50 +271,89 @@ var MapFsm = (function () {
         disY = Math.abs(curMI.col - this._endMapItem.col);
         return (disX + disY) * 10;
     };
+    /////////////////////////////////////////布兰森汉姆算法部分///////////////////////////////////
     MapFsm.prototype.bresenHamLine = function () {
-        var x1 = this._startMapItem.row;
-        var y1 = this._startMapItem.col;
-        var x2 = this._endMapItem.row;
-        var y2 = this._endMapItem.col;
-        var w = x2 - x1;
-        var h = y2 - y1;
-        var dx = w > 0 ? 1 : -1;
-        var dy = h > 0 ? 1 : -1;
-        w = Math.abs(w);
-        h = Math.abs(h);
-        var f, y, x, delta1, delta2;
-        if (w > h) {
-            f = 2 * h - w;
-            delta1 = 2 * h;
-            delta2 = (h - w) * 2;
-            for (x = x1, y = y1; x != x2; x += dx) {
-                var MI = new StdMapItem();
-                this.BH_List.push({ row: x, col: y });
-                if (f < 0) {
-                    f += delta1;
-                }
-                else {
-                    y += dy;
-                    f += delta2;
+        var path = [];
+        this._curMapItem = this._startMapItem;
+        var y = this._curMapItem.col;
+        var x = this._curMapItem.row;
+        var dy = Math.abs(this._endMapItem.col - this._startMapItem.col);
+        var dx = Math.abs(this._endMapItem.row - this._startMapItem.row);
+        var sy = this._endMapItem.col > this._startMapItem.col ? 1 : -1;
+        var sx = this._endMapItem.row > this._startMapItem.row ? 1 : -1;
+        var interchange = 0;
+        if (dy < dx) {
+            interchange = 1;
+            dy = dy + dx;
+            dx = dy - dx;
+            dy = dy - dx;
+        }
+        var middle = dy;
+        var deltaY = (dx << 1);
+        while (this._curMapItem != this._endMapItem) {
+            if (interchange)
+                x += sx;
+            else
+                y += sy;
+            if (deltaY >= middle) {
+                if (interchange)
+                    y += sy;
+                else
+                    x += sx;
+                middle += (dy << 1);
+            }
+            deltaY += (dx << 1);
+            var id = y + (x - 1) * this._mapRow;
+            this._curMapItem = this._mapData.source[id - 1];
+            path.push(this._curMapItem);
+        }
+        return path;
+    };
+    /////////////////////////////////////////随机生成迷宫算法///////////////////////////////////
+    MapFsm.prototype.primMap = function () {
+        //全部设墙
+        for (var _i = 0, _a = this._mapData.source; _i < _a.length; _i++) {
+            var item = _a[_i];
+            this.MIS(item, MI_STATUS.DEFAULT);
+        }
+        //acc存放已访问队列，noacc存放没有访问队列
+        var acc = [], noacc = [];
+        //中间格子打通
+        for (var i = 1; i <= this._mapRow; ++i) {
+            for (var j = 1; j <= this._mapCol; ++j) {
+                var id = i + (j - 1) * this._mapRow;
+                if (!(i % 2) && !(j % 2)) {
+                    this.MIS(this._mapData.source[id - 1], MI_STATUS.STONE);
+                    noacc.push(id);
                 }
             }
         }
-        else {
-            f = 2 * w - h;
-            delta1 = w * 2;
-            delta2 = (w - h) * 2;
-            for (x = x1, y = y1; y != y2; y += dy) {
-                this.BH_List.push({ row: x, col: y });
-                if (f < 0) {
-                    f += delta1;
-                }
-                else {
-                    x += dx;
-                    f += delta2;
-                }
+        var randIdx = MathUtil.randomRange(0, noacc.length - 1);
+        var pos = noacc[randIdx];
+        acc.push(pos);
+        while (acc.length < noacc.length) {
+            var roundArr = [];
+            var curMI = this._mapData.source[pos - 1];
+            var offX = [0, 0, 1, -1], offY = [1, -1, 0, 0];
+            var len = offX.length;
+            for (var i = 0; i < len; ++i) {
+                var id = this.getIdByOS(curMI, offX[i], offY[i]);
+                if (id == null)
+                    continue;
+                id = this.getIdByOS(this._mapData.source[id - 1], offX[i], offY[i]);
+                if (id != null && acc.indexOf(id) == -1)
+                    roundArr.push(id);
+            }
+            var roundPos = roundArr[MathUtil.randomRange(0, roundArr.length - 1)];
+            if (roundPos) {
+                this.MIS(this._mapData.source[roundPos + (roundPos - pos) / 2 - 1], MI_STATUS.STONE);
+                pos = roundPos;
+                acc.push(roundPos);
+            }
+            else {
+                pos = acc[MathUtil.randomRange(0, acc.length - 1)];
             }
         }
-        this.BH_List.push({ row: x, col: y });
     };
     return MapFsm;
 }());

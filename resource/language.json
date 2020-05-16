@@ -1,0 +1,2717 @@
+﻿{
+	"tip": [
+		{
+			"key": "1",
+			"value": "您的VIP等级已达到最高了!",
+			"explain": "VIP界面等级过高"
+		},
+		{
+			"key": "2",
+			"value": "发言速度过快!",
+			"explain": "聊天界面发言时间未到"
+		},
+		{
+			"key": "3",
+			"value": "聊天内容不能超过30个字",
+			"explain": "输入过长"
+		},
+		{
+			"key": "4",
+			"value": "奖励已领取",
+			"explain": "多次领取"
+		},
+		{
+			"key": "5",
+			"value": "奖励不可以领取",
+			"explain": "当条件不满足领取时提示"
+		},
+		{
+			"key": "6",
+			"value": "名称中包含非法字符或长度不合法",
+			"explain": ""
+		},
+		{
+			"key": "7",
+			"value": "创建失败,角色名重复",
+			"explain": ""
+		},
+		{
+			"key": "8",
+			"value": "开启[number]个格子",
+			"explain": "开启格子提示"
+		},
+		{
+			"key": "9",
+			"value": "已达扩容最大上限",
+			"explain": "背包扩容达到上限"
+		},
+		{
+			"key": "10",
+			"value": "你被[name]击败了",
+			"explain": ""
+		},
+		{
+			"key": "11",
+			"value": "再充值<font color='0xffff00'>[number]</font>元可领取",
+			"explain": ""
+		},
+		{
+			"key": "12",
+			"value": "当前网络连接中断,是否重连?",
+			"explain": ""
+		},
+		{
+			"key": "13",
+			"value": "铜钱不足!",
+			"explain": ""
+		},
+		{
+			"key": "14",
+			"value": "元宝不足",
+			"explain": ""
+		},
+		{
+			"key": "15",
+			"value": "条件尚未全部达成",
+			"explain": "神装锻造的时候，任务未全部完成"
+		},
+		{
+			"key": "16",
+			"value": "仓库中没有物品",
+			"explain": "寻宝系统 仓库中无物品"
+		},
+		{
+			"key": "17",
+			"value": "职业不符",
+			"explain": "穿戴的装备与自身职业不相符"
+		},
+		{
+			"key": "18",
+			"value": "需要[number]级才能穿戴",
+			"explain": ""
+		},
+		{
+			"key": "19",
+			"value": "没有装备",
+			"explain": ""
+		},
+		{
+			"key": "20",
+			"value": "角色需达到[number]级",
+			"explain": ""
+		},
+		{
+			"key": "21",
+			"value": "已达到铜钱助威次数上限",
+			"explain": "世界boss助威"
+		},
+		{
+			"key": "22",
+			"value": "助威成功",
+			"explain": "世界boss助威"
+		},
+		{
+			"key": "23",
+			"value": "挖宝中...",
+			"explain": ""
+		},
+		{
+			"key": "24",
+			"value": "背包容量不足，请先清理背包!",
+			"explain": ""
+		},
+		{
+			"key": "25",
+			"value": "剩余挑战次数不足",
+			"explain": "挑战次数不足"
+		},
+		{
+			"key": "26",
+			"value": "购买魂导师次数不足",
+			"explain": ""
+		},
+		{
+			"key": "27",
+			"value": "等级不足",
+			"explain": ""
+		},
+		{
+			"key": "28",
+			"value": "魂魄石等级已升至满级",
+			"explain": ""
+		},
+		{
+			"key": "29",
+			"value": "已淬炼至满级",
+			"explain": "神装淬炼至满级"
+		},
+		{
+			"key": "30",
+			"value": "等级不足,暂时无法开启任务!",
+			"explain": "任务不能接受"
+		},
+		{
+			"key": "31",
+			"value": "当前场景不可更改pk模式",
+			"explain": ""
+		},
+		{
+			"key": "32",
+			"value": "目标距离太远",
+			"explain": "使用合击技能"
+		},
+		{
+			"key": "33",
+			"value": "技能正在冷却中",
+			"explain": "使用合击技能cd时间"
+		},
+		{
+			"key": "34",
+			"value": "羽毛不足",
+			"explain": ""
+		},
+		{
+			"key": "35",
+			"value": "购买成功",
+			"explain": ""
+		},
+		{
+			"key": "36",
+			"value": "挑战次数不足",
+			"explain": "竞技场挑战次数不足"
+		},
+		{
+			"key": "37",
+			"value": "当前正处于副本中,无法前往挖宝.",
+			"explain": "挖宝"
+		},
+		{
+			"key": "38",
+			"value": "不可同时使用",
+			"explain": "当前已在挖宝"
+		},
+		{
+			"key": "39",
+			"value": "当前等级不足[number]级,无法使用藏宝图 ",
+			"explain": "挖宝等级不足"
+		},
+		{
+			"key": "40",
+			"value": "未通关第[number]关，无法进行挖宝",
+			"explain": "挖宝前置关卡不满足"
+		},
+		{
+			"key": "41",
+			"value": "等级不足，无法进入挖宝场景",
+			"explain": "挖宝进入的场景等级不够"
+		},
+		{
+			"key": "42",
+			"value": "神装已全部铸造完成",
+			"explain": ""
+		},
+		{
+			"key": "43",
+			"value": "未发现可攻击目标",
+			"explain": "出现抢夺归属和攻击boss按钮，点击攻击boss 当前场景没有存在boss"
+		},
+		{
+			"key": "44",
+			"value": "暂未达到要求开启新功能",
+			"explain": "点击主界面的功能开放"
+		},
+		{
+			"key": "45",
+			"value": "元宝不足，炼金失败",
+			"explain": "炼金失败"
+		},
+		{
+			"key": "46",
+			"value": "未激活该伙伴!",
+			"explain": ""
+		},
+		{
+			"key": "47",
+			"value": "暂无人上榜",
+			"explain": ""
+		},
+		{
+			"key": "48",
+			"value": "铜钱不够或者技能不能超过主角等级",
+			"explain": "技能升级失败"
+		},
+		{
+			"key": "49",
+			"value": "你已死亡",
+			"explain": ""
+		},
+		{
+			"key": "50",
+			"value": "该魂环槽已达到等级上限!",
+			"explain": ""
+		},
+		{
+			"key": "51",
+			"value": "请先添加吸收材料!",
+			"explain": ""
+		},
+		{
+			"key": "52",
+			"value": "吸收格子已填满!",
+			"explain": ""
+		},
+		{
+			"key": "53",
+			"value": "魂环材料不足!",
+			"explain": ""
+		},
+		{
+			"key": "54",
+			"value": "该魂环槽尚未镶嵌",
+			"explain": ""
+		},
+		{
+			"key": "55",
+			"value": "低品质魂环不可替换高品质魂环",
+			"explain": ""
+		},
+		{
+			"key": "56",
+			"value": "请先选择魂环材料",
+			"explain": ""
+		},
+		{
+			"key": "57",
+			"value": "该魂环槽尚未开启,无法吸收!",
+			"explain": ""
+		},
+		{
+			"key": "58",
+			"value": "该魂环槽尚未开启!",
+			"explain": ""
+		},
+		{
+			"key": "59",
+			"value": "vip等级不足",
+			"explain": "魂导器"
+		},
+		{
+			"key": "60",
+			"value": "成就经验不足",
+			"explain": "成就升级经验不足"
+		},
+		{
+			"key": "61",
+			"value": "魂力不足",
+			"explain": "魂师升级魂力不足"
+		},
+		{
+			"key": "62",
+			"value": "当前助威次数已达上限",
+			"explain": ""
+		},
+		{
+			"key": "63",
+			"value": "当前铜钱助威次数已达上限",
+			"explain": ""
+		},
+		{
+			"key": "64",
+			"value": "帐号在其他地方登录!",
+			"explain": ""
+		},
+		{
+			"key": "65",
+			"value": "称号等级已满!",
+			"explain": ""
+		},
+		{
+			"key": "66",
+			"value": "角色等级需[number]级可升至下一级!",
+			"explain": ""
+		},
+		{
+			"key": "67",
+			"value": "是否花费[number]元宝补签",
+			"explain": ""
+		},
+		{
+			"key": "68",
+			"value": "当前没有可以提升",
+			"explain": "点主界面的提升，没有功能可以提升"
+		},
+		{
+			"key": "69",
+			"value": "当前没有资源找回次数",
+			"explain": ""
+		},
+		{
+			"key": "70",
+			"value": "新名称不能为空",
+			"explain": ""
+		},
+		{
+			"key": "71",
+			"value": "不能发送空白信息",
+			"explain": ""
+		},
+		{
+			"key": "72",
+			"value": "已强化至满级",
+			"explain": ""
+		},
+		{
+			"key": "73",
+			"value": "当前没有可以一键操作的装备",
+			"explain": "锻造界面一键操作条件不满足"
+		},
+		{
+			"key": "74",
+			"value": "打怪、杀BOSS可存储经验",
+			"explain": "经验玉经验获取方式"
+		},
+		{
+			"key": "75",
+			"value": "等级已满",
+			"explain": ""
+		},
+		{
+			"key": "76",
+			"value": "星级已满",
+			"explain": ""
+		},
+		{
+			"key": "79",
+			"value": "强化石不足或当前无可强化的装备",
+			"explain": ""
+		},
+		{
+			"key": "77",
+			"value": "升星石不足或当前无可升星的装备",
+			"explain": ""
+		},
+		{
+			"key": "78",
+			"value": "魂魄石不足或当前无可升级的装备",
+			"explain": ""
+		},
+		{
+			"key": "80",
+			"value": "主城不可以使用融合技",
+			"explain": ""
+		},
+		{
+			"key": "81",
+			"value": "需要上一级难度的副本达到三星",
+			"explain": ""
+		},
+		{
+			"key": "82",
+			"value": "该技能尚未激活",
+			"explain": ""
+		},
+		{
+			"key": "83",
+			"value": "需要达到3星才能进行扫荡",
+			"explain": ""
+		},
+		{
+			"key": "84",
+			"value": "需要[number]级才能使用该藏宝图",
+			"explain": ""
+		},
+		{
+			"key": "85",
+			"value": "答题次数已用完",
+			"explain": ""
+		},
+		{
+			"key": "86",
+			"value": "请勿重复作答",
+			"explain": ""
+		},
+		{
+			"key": "87",
+			"value": "活动未开启",
+			"explain": ""
+		},
+		{
+			"key": "88",
+			"value": "已购买成长基金",
+			"explain": ""
+		},
+		{
+			"key": "89",
+			"value": "是否花费[number]元宝购买?",
+			"explain": ""
+		},
+		{
+			"key": "90",
+			"value": "购买次数已达上限!",
+			"explain": ""
+		},
+		{
+			"key": "91",
+			"value": "尚未激活任何伙伴!",
+			"explain": ""
+		},
+		{
+			"key": "92",
+			"value": "觉醒等级不足!",
+			"explain": ""
+		},
+		{
+			"key": "93",
+			"value": "请选择合成数量!",
+			"explain": ""
+		},
+		{
+			"key": "94",
+			"value": "尚未集齐时装所有部件，无法激活!",
+			"explain": ""
+		},
+		{
+			"key": "95",
+			"value": "暂无更多宗门数据!",
+			"explain": ""
+		},
+		{
+			"key": "96",
+			"value": "碎片不足，无法合成!",
+			"explain": ""
+		},
+		{
+			"key": "97",
+			"value": "尚未学习融合技!",
+			"explain": ""
+		},
+		{
+			"key": "98",
+			"value": "技能等级不能超过人物等级!",
+			"explain": ""
+		},
+		{
+			"key": "99",
+			"value": "权限不足!",
+			"explain": ""
+		},
+		{
+			"key": "100",
+			"value": "宗主正在被弹劾!",
+			"explain": ""
+		},
+		{
+			"key": "101",
+			"value": "只有副宗主方可弹劾!",
+			"explain": ""
+		},
+		{
+			"key": "102",
+			"value": "宗主离线时间不满足弹劾条件!",
+			"explain": ""
+		},
+		{
+			"key": "103",
+			"value": "[number]不足",
+			"explain": ""
+		},
+		{
+			"key": "104",
+			"value": "请输入捐献数量!",
+			"explain": ""
+		},
+		{
+			"key": "105",
+			"value": "[number]不足,创建失败!",
+			"explain": ""
+		},
+		{
+			"key": "106",
+			"value": "请输入宗门名称!",
+			"explain": ""
+		},
+		{
+			"key": "107",
+			"value": "[number]职务人数已达上限!",
+			"explain": ""
+		},
+		{
+			"key": "108",
+			"value": "请在输入框中输入关键词!",
+			"explain": ""
+		},
+		{
+			"key": "109",
+			"value": "请输入新公告!",
+			"explain": ""
+		},
+		{
+			"key": "110",
+			"value": "[number]成功!",
+			"explain": ""
+		},
+		{
+			"key": "111",
+			"value": "只能弹劾宗主!",
+			"explain": ""
+		},
+		{
+			"key": "112",
+			"value": "该职务人数已达上限!",
+			"explain": ""
+		},
+		{
+			"key": "113",
+			"value": "找不到符合搜索条件的宗门!",
+			"explain": ""
+		},
+		{
+			"key": "114",
+			"value": "伙伴试用结束!",
+			"explain": ""
+		},
+		{
+			"key": "115",
+			"value": "使用个数已达上限!",
+			"explain": ""
+		},
+		{
+			"key": "116",
+			"value": "积分不足,无法兑换",
+			"explain": ""
+		},
+		{
+			"key": "117",
+			"value": "当前已在试炼之塔中",
+			"explain": ""
+		},
+		{
+			"key": "118",
+			"value": "[name]捐献数量不能低于[number]",
+			"explain": ""
+		},
+		{
+			"key": "119",
+			"value": "当前没有奖励",
+			"explain": ""
+		},
+		{
+			"key": "120",
+			"value": "您已在副本内，退出当前副本才能进入",
+			"explain": ""
+		},
+		{
+			"key": "121",
+			"value": "尚无任何资源可找回",
+			"explain": ""
+		},
+		{
+			"key": "122",
+			"value": "[number]级以下不可进入",
+			"explain": ""
+		},
+		{
+			"key": "123",
+			"value": "通关后才可以领取奖励",
+			"explain": ""
+		},
+		{
+			"key": "124",
+			"value": "暂无更多数据",
+			"explain": ""
+		},
+		{
+			"key": "125",
+			"value": "注灵石不足或当前无可注灵的装备",
+			"explain": ""
+		}
+	],
+	"role": [
+		{
+			"key": "attack",
+			"value": "攻   击"
+		},
+		{
+			"key": "defense",
+			"value": "防   御"
+		},
+		{
+			"key": "hp",
+			"value": "生   命"
+		},
+		{
+			"key": "propertyAdvanced",
+			"value": "高级属性"
+		},
+		{
+			"key": "crit",
+			"value": "暴击机率"
+		},
+		{
+			"key": "critDefense",
+			"value": "暴击抵抗"
+		},
+		{
+			"key": "block",
+			"value": "怪物特攻"
+		},
+		{
+			"key": "attackDestroy",
+			"value": "固定伤害"
+		},
+		{
+			"key": "hit",
+			"value": "命   中"
+		},
+		{
+			"key": "miss",
+			"value": "闪   避"
+		},
+		{
+			"key": "propertySpecial",
+			"value": "特殊属性"
+		},
+		{
+			"key": "critHarm",
+			"value": "暴击伤害"
+		},
+		{
+			"key": "blockDefense",
+			"value": "固伤减免"
+		},
+		{
+			"key": "addHarm",
+			"value": "伤害加成"
+		},
+		{
+			"key": "defenseHarm",
+			"value": "伤害减免"
+		}
+	],
+	"equip": [
+		{
+			"key": "ComAttribute0",
+			"value": "未定义属性"
+		},
+		{
+			"key": "ComAttribute1",
+			"value": "生命"
+		},
+		{
+			"key": "ComAttribute2",
+			"value": "攻击"
+		},
+		{
+			"key": "ComAttribute3",
+			"value": "物防"
+		},
+		{
+			"key": "ComAttribute4",
+			"value": "魔防"
+		},
+		{
+			"key": "ComAttribute5",
+			"value": "暴击"
+		},
+		{
+			"key": "ComAttribute6",
+			"value": "暴击强度"
+		},
+		{
+			"key": "ComAttribute7",
+			"value": "暴击伤害"
+		},
+		{
+			"key": "ComAttribute8",
+			"value": "魔法"
+		},
+		{
+			"key": "ComAttribute9",
+			"value": "闪避"
+		},
+		{
+			"key": "ComAttribute10",
+			"value": "命中"
+		},
+		{
+			"key": "ComAttribute11",
+			"value": "武器基本百分比"
+		},
+		{
+			"key": "ComAttribute12",
+			"value": "项链基本百分比"
+		},
+		{
+			"key": "ComAttribute13",
+			"value": "衣服基本百分比"
+		},
+		{
+			"key": "ComAttribute14",
+			"value": "头盔基本百分比"
+		},
+		{
+			"key": "ComAttribute15",
+			"value": "护腿基本百分比"
+		},
+		{
+			"key": "ComAttribute16",
+			"value": "护手基本百分比"
+		},
+		{
+			"key": "ComAttribute17",
+			"value": "腰带基本百分比"
+		},
+		{
+			"key": "ComAttribute18",
+			"value": "鞋子基本百分比"
+		},
+		{
+			"key": "ComAttribute19",
+			"value": "戒指基本百分比"
+		},
+		{
+			"key": "ComAttribute20",
+			"value": "玉佩基本百分比"
+		},
+		{
+			"key": "ComAttribute21",
+			"value": "主宰武器基本百分比"
+		},
+		{
+			"key": "ComAttribute22",
+			"value": "主宰项链基本百分比"
+		},
+		{
+			"key": "ComAttribute23",
+			"value": "主宰衣服基本百分比"
+		},
+		{
+			"key": "ComAttribute24",
+			"value": "主宰头饰基本百分比"
+		},
+		{
+			"key": "ComAttribute25",
+			"value": "主宰裤子基本百分比"
+		},
+		{
+			"key": "ComAttribute26",
+			"value": "主宰护手基本百分比"
+		},
+		{
+			"key": "ComAttribute27",
+			"value": "主宰腰带基本百分比"
+		},
+		{
+			"key": "ComAttribute28",
+			"value": "主宰鞋子基本百分比"
+		},
+		{
+			"key": "ComAttribute29",
+			"value": "主宰戒指基本百分比"
+		},
+		{
+			"key": "ComAttribute30",
+			"value": "主宰手镯基本百分比"
+		},
+		{
+			"key": "ComAttribute31",
+			"value": "战歌神剑基础属性"
+		},
+		{
+			"key": "ComAttribute32",
+			"value": "战歌神甲基础属性"
+		},
+		{
+			"key": "ComAttribute33",
+			"value": "生命"
+		},
+		{
+			"key": "ComAttribute34",
+			"value": "攻击"
+		},
+		{
+			"key": "ComAttribute35",
+			"value": "物防"
+		},
+		{
+			"key": "ComAttribute36",
+			"value": "魔防"
+		},
+		{
+			"key": "ComAttribute37",
+			"value": "羽翼生命增加"
+		},
+		{
+			"key": "ComAttribute38",
+			"value": "羽翼攻击增加"
+		},
+		{
+			"key": "ComAttribute39",
+			"value": "羽翼物防增加"
+		},
+		{
+			"key": "ComAttribute40",
+			"value": "羽翼魔防增加"
+		},
+		{
+			"key": "ComAttribute41",
+			"value": "受将军伤害减免"
+		},
+		{
+			"key": "ComAttribute42",
+			"value": "对将军伤害加成"
+		},
+		{
+			"key": "ComAttribute43",
+			"value": "受将军伤害减少"
+		},
+		{
+			"key": "ComAttribute44",
+			"value": "对将军伤害增加"
+		},
+		{
+			"key": "ComAttribute45",
+			"value": "受军师伤害减免"
+		},
+		{
+			"key": "ComAttribute46",
+			"value": "对军师伤害加成"
+		},
+		{
+			"key": "ComAttribute47",
+			"value": "受军师伤害减少"
+		},
+		{
+			"key": "ComAttribute48",
+			"value": "对军师伤害增加"
+		},
+		{
+			"key": "ComAttribute49",
+			"value": "受统领伤害减免"
+		},
+		{
+			"key": "ComAttribute50",
+			"value": "对统领伤害加成"
+		},
+		{
+			"key": "ComAttribute51",
+			"value": "受统领伤害减少"
+		},
+		{
+			"key": "ComAttribute52",
+			"value": "对统领伤害增加"
+		},
+		{
+			"key": "ComAttribute53",
+			"value": "受怪物伤害减免"
+		},
+		{
+			"key": "ComAttribute54",
+			"value": "对怪物伤害加成"
+		},
+		{
+			"key": "ComAttribute55",
+			"value": "对怪物伤害增加"
+		},
+		{
+			"key": "ComAttribute56",
+			"value": "对怪物暴击增加"
+		},
+		{
+			"key": "ComAttribute57",
+			"value": "对怪物暴击伤害"
+		},
+		{
+			"key": "ComAttribute58",
+			"value": "免伤"
+		},
+		{
+			"key": "ComAttribute59",
+			"value": "增伤"
+		},
+		{
+			"key": "ComAttribute60",
+			"value": "无视防御"
+		},
+		{
+			"key": "ComAttribute61",
+			"value": "内功"
+		},
+		{
+			"key": "ComAttribute62",
+			"value": "内功恢复"
+		},
+		{
+			"key": "ComAttribute63",
+			"value": "伤害抵消"
+		},
+		{
+			"key": "ComAttribute64",
+			"value": "麻痹几率"
+		},
+		{
+			"key": "ComAttribute65",
+			"value": "致命一击几率"
+		},
+		{
+			"key": "ComAttribute66",
+			"value": "致命一击伤害"
+		},
+		{
+			"key": "ComAttribute67",
+			"value": "致命一击伤害减少"
+		},
+		{
+			"key": "ComAttribute68",
+			"value": "暴击伤害增加"
+		},
+		{
+			"key": "ComAttribute69",
+			"value": "暴击伤害减少"
+		},
+		{
+			"key": "ComAttribute70",
+			"value": "复活几率"
+		},
+		{
+			"key": "ComAttribute71",
+			"value": "回复生命比例"
+		},
+		{
+			"key": "ComAttribute72",
+			"value": "回复生命值"
+		},
+		{
+			"key": "ComAttribute73",
+			"value": "受到伤害上限值"
+		},
+		{
+			"key": "ComAttribute74",
+			"value": "连击对玩家威力提升"
+		},
+		{
+			"key": "ComAttribute75",
+			"value": "连击对怪物威力提升"
+		},
+		{
+			"key": "ComAttribute76",
+			"value": "受连击伤害减少"
+		},
+		{
+			"key": "ComAttribute77",
+			"value": "韧性"
+		},
+		{
+			"key": "ComAttribute78",
+			"value": "等级基础属性生命增加比例"
+		},
+		{
+			"key": "ComAttribute79",
+			"value": "等级基础属性攻击增加比例"
+		},
+		{
+			"key": "ComAttribute80",
+			"value": "等级基础属性物防增加比例"
+		},
+		{
+			"key": "ComAttribute81",
+			"value": "等级基础属性魔防增加比例"
+		},
+		{
+			"key": "part",
+			"value": "部位"
+		},
+		{
+			"key": "part0",
+			"value": "普通物品"
+		},
+		{
+			"key": "part1",
+			"value": "武器"
+		},
+		{
+			"key": "part2",
+			"value": "项链"
+		},
+		{
+			"key": "part3",
+			"value": "衣服"
+		},
+		{
+			"key": "part4",
+			"value": "头盔"
+		},
+		{
+			"key": "part5",
+			"value": "裤子"
+		},
+		{
+			"key": "part6",
+			"value": "护手"
+		},
+		{
+			"key": "part7",
+			"value": "腰带"
+		},
+		{
+			"key": "part8",
+			"value": "鞋子"
+		},
+		{
+			"key": "part9",
+			"value": "戒指"
+		},
+		{
+			"key": "part10",
+			"value": "手镯"
+		},
+		{
+			"key": "part601",
+			"value": "头骨"
+		},
+		{
+			"key": "part602",
+			"value": "躯干骨"
+		},
+		{
+			"key": "part603",
+			"value": "左臂骨"
+		},
+		{
+			"key": "part604",
+			"value": "右臂骨"
+		},
+		{
+			"key": "part605",
+			"value": "左腿骨"
+		},
+		{
+			"key": "part606",
+			"value": "右腿骨"
+		},
+		{
+			"key": "equipMasterLevel",
+			"value": "装备强化大师[number]级"
+		},
+		{
+			"key": "allEquipLevel",
+			"value": "（全身装备强化至[number]级）"
+		},
+		{
+			"key": "equipStarLevel",
+			"value": "装备升星共鸣[number]级"
+		},
+		{
+			"key": "allEquipStar",
+			"value": "（全身装备升星至[number]级）"
+		},
+		{
+			"key": "upLevelGemName",
+			"value": "升级[type]"
+		},
+		{
+			"key": "attrAdd",
+			"value": "[type]+[number]"
+		},
+		{
+			"key": "noUpLevelEquip",
+			"value": "无可升星的装备"
+		}
+	],
+	"date": [
+		{
+			"key": "shi",
+			"value": "时"
+		},
+		{
+			"key": "fen",
+			"value": "分"
+		},
+		{
+			"key": "nian",
+			"value": "年"
+		},
+		{
+			"key": "miao",
+			"value": "秒"
+		},
+		{
+			"key": "yue",
+			"value": "月"
+		},
+		{
+			"key": "ri",
+			"value": "日"
+		}
+	],
+	"number": [
+		{
+			"key": "0",
+			"value": "零"
+		},
+		{
+			"key": "1",
+			"value": "一"
+		},
+		{
+			"key": "2",
+			"value": "二"
+		},
+		{
+			"key": "3",
+			"value": "三"
+		},
+		{
+			"key": "4",
+			"value": "四"
+		},
+		{
+			"key": "5",
+			"value": "五"
+		},
+		{
+			"key": "6",
+			"value": "六"
+		},
+		{
+			"key": "7",
+			"value": "七"
+		},
+		{
+			"key": "8",
+			"value": "八"
+		},
+		{
+			"key": "9",
+			"value": "九"
+		},
+		{
+			"key": "10",
+			"value": "十"
+		},
+		{
+			"key": "wan",
+			"value": "万"
+		},
+		{
+			"key": "yi",
+			"value": "亿"
+		},
+		{
+			"key": "bai",
+			"value": "百"
+		},
+		{
+			"key": "qian",
+			"value": "千"
+		}
+	],
+	"common": [
+		{
+			"key": "color",
+			"value": "<font color='$color$'>$str$</font>"
+		},
+		{
+			"key": "lv",
+			"value": "等级"
+		},
+		{
+			"key": "lv1",
+			"value": "级"
+		},
+		{
+			"key": "lv2",
+			"value": "尚未开启"
+		},
+		{
+			"key": "cd",
+			"value": "CD:"
+		},
+		{
+			"key": "iscd",
+			"value": "CD中，无法操作"
+		},
+		{
+			"key": "jg1",
+			"value": "胜利"
+		},
+		{
+			"key": "jg2",
+			"value": "失败"
+		},
+		{
+			"key": "jg3",
+			"value": "平手"
+		},
+		{
+			"key": "qd",
+			"value": "确定"
+		},
+		{
+			"key": "100",
+			"value": "我的排名:"
+		},
+		{
+			"key": "101",
+			"value": "未入榜"
+		},
+		{
+			"key": "102",
+			"value": "角色等级需达到$v$级"
+		},
+		{
+			"key": "jxz",
+			"value": "活动进行中\n"
+		},
+		{
+			"key": "yugaoinfo",
+			"value": "活动即将开始\n"
+		},
+		{
+			"key": "jieshu",
+			"value": "活动即将结束\n"
+		},
+		{
+			"key": "isopen",
+			"value": "开启中"
+		},
+		{
+			"key": "isclose",
+			"value": "未开启"
+		},
+		{
+			"key": "tzcount",
+			"value": "挑战次数："
+		},
+		{
+			"key": "guize",
+			"value": "<u><font color='#00ff00'>活动规则</font></u>"
+		},
+		{
+			"key": "citan",
+			"value": "刺探"
+		},
+		{
+			"key": "sytime",
+			"value": "剩余时间："
+		},
+		{
+			"key": "sycount",
+			"value": "剩余次数："
+		},
+		{
+			"key": "yinliang",
+			"value": "银两"
+		},
+		{
+			"key": "qdquit",
+			"value": "是否确定退出"
+		},
+		{
+			"key": "wxts",
+			"value": "温馨提示"
+		},
+		{
+			"key": "quxiao",
+			"value": "取消"
+		},
+		{
+			"key": "bnjb",
+			"value": "被你击败了"
+		},
+		{
+			"key": "qianwang",
+			"value": "前往$value$中"
+		},
+		{
+			"key": "wfcz0",
+			"value": "无生存的角色，无法操作"
+		},
+		{
+			"key": "notarget",
+			"value": "没选择目标"
+		},
+		{
+			"key": "nocontrol",
+			"value": "没有指挥权"
+		},
+		{
+			"key": "xlqhError1",
+			"value": "线路切换过于频繁，请等待$value$秒"
+		},
+		{
+			"key": "hqtj",
+			"value": "<font color='#ffff00'><u>快速获取</u></font>"
+		},
+		{
+			"key": "djbz",
+			"value": "道具不足"
+		},
+		{
+			"key": "bossfhtx",
+			"value": "<font color='#ffff00'><u>Boss复活提醒</u></font>"
+		},
+		{
+			"key": "bossfhtx1",
+			"value": "<font><u>提醒设置</u></font>"
+		},
+		{
+			"key": "seerank",
+			"value": "<font color='#00ff00'><u>查看排名</u></font>"
+		},
+		{
+			"key": "caiji_1",
+			"value": "采集宝箱将消耗<font color='#00ff00'>1次</font>归属次数，\n是否开始采集？\n<font color='0x00e5fb' size ='22'>（剩余次数：$value$）</font>"
+		},
+		{
+			"key": "zltime1",
+			"value": "占领时间：$value$秒"
+		},
+		{
+			"key": "zltime2",
+			"value": "$value$秒"
+		},
+		{
+			"key": "zltime3",
+			"value": "占领时间："
+		},
+		{
+			"key": "bjb",
+			"value": "你被<font color='0x39D636'>$value$</font>击败"
+		},
+		{
+			"key": "zlsc",
+			"value": "当前占领时长："
+		},
+		{
+			"key": "ljfh",
+			"value": "立即复活"
+		},
+		{
+			"key": "houhuifu",
+			"value": "<font>$value$后减少1点疲劳值</font>"
+		},
+		{
+			"key": "pilao",
+			"value": "疲劳值:"
+		},
+		{
+			"key": "wuzhanling",
+			"value": "无占领"
+		},
+		{
+			"key": "zhanglingzhong",
+			"value": "占领中"
+		},
+		{
+			"key": "bjboss_1",
+			"value": "是否保持协助者身份？保持协助者身份将不会成为挑战者争夺BOSS归属权，但协助本国挑战者获得归属奖励后可获得协助奖励"
+		},
+		{
+			"key": "gsz",
+			"value": "归属者:"
+		},
+		{
+			"key": "maxzlsc",
+			"value": "最高占领时长:"
+		},
+		{
+			"key": "exit_1",
+			"value": "退出副本后，再次进入副本需要等待10s"
+		},
+		{
+			"key": "cshf",
+			"value": "次数恢复："
+		},
+		{
+			"key": "myrank",
+			"value": "我的排名："
+		},
+		{
+			"key": "myjifen",
+			"value": "我的积分："
+		},
+		{
+			"key": "myshanghai",
+			"value": "我的伤害："
+		},
+		{
+			"key": "shanghai",
+			"value": "伤害："
+		},
+		{
+			"key": "jifen",
+			"value": "积分："
+		},
+		{
+			"key": "canzhanLog",
+			"value": "<u><font color='0xFDCD00'>参战记录</font></u>"
+		},
+		{
+			"key": "comhelp",
+			"value": "规则详情"
+		}
+	],
+	"citan": [
+		{
+			"key": "0",
+			"value": "本次刺探帝国国家总奖励："
+		},
+		{
+			"key": "1",
+			"value": "($value$%银两奖励)"
+		},
+		{
+			"key": "2",
+			"value": "国探结束倒计时"
+		},
+		{
+			"key": "3",
+			"value": "国探开启倒计时"
+		},
+		{
+			"key": "4",
+			"value": "国探开启中"
+		},
+		{
+			"key": "5",
+			"value": "国探未开启"
+		}
+	],
+	"Country": [
+		{
+			"key": "0",
+			"value": "<font color='#d40403'>国家</font>"
+		},
+		{
+			"key": "1",
+			"value": "<font color='#0000ff'>【魏】</font>"
+		},
+		{
+			"key": "2",
+			"value": "<font color='#00ff00'>【蜀】</font>"
+		},
+		{
+			"key": "3",
+			"value": "<font color='#ff0000'>【吴】</font>"
+		},
+		{
+			"key": "4",
+			"value": "<font color='#000000'>【王城】</font>"
+		},
+		{
+			"key": "10",
+			"value": "我的战功:"
+		},
+		{
+			"key": "11",
+			"value": "魏国"
+		},
+		{
+			"key": "12",
+			"value": "蜀国"
+		},
+		{
+			"key": "13",
+			"value": "吴国"
+		},
+		{
+			"key": "14",
+			"value": "王城"
+		},
+		{
+			"key": "21",
+			"value": "<font color='#0000ff'>魏font>"
+		},
+		{
+			"key": "22",
+			"value": "<font color='#00ff00'>蜀</font>"
+		},
+		{
+			"key": "23",
+			"value": "<font color='#ff0000'>吴</font>"
+		},
+		{
+			"key": "4",
+			"value": "<font color='#000000'>[王城]</font>"
+		}
+	],
+	"Boss": [
+		{
+			"key": "0",
+			"value": "当前鼓舞：元神伤害 +$str$%"
+		},
+		{
+			"key": "1",
+			"value": "个人鼓舞次数：$str$/$str1$"
+		},
+		{
+			"key": "2",
+			"value": "每次鼓舞可增加元神$str$伤害（上限$str1$%）"
+		},
+		{
+			"key": "3",
+			"value": "正在抢夺归属"
+		},
+		{
+			"key": "4",
+			"value": "抢夺归属"
+		},
+		{
+			"key": "5",
+			"value": "本国归属"
+		},
+		{
+			"key": "6",
+			"value": "正在攻击银库"
+		},
+		{
+			"key": "7",
+			"value": "攻击银库"
+		},
+		{
+			"key": "8",
+			"value": "我是归属者"
+		}
+	],
+	"GuoJia": [
+		{
+			"key": "0",
+			"value": "消耗$str$可以叛国，点击国家旗帜选择要转移的国家，但$time$内不能再次叛国。"
+		},
+		{
+			"key": "1",
+			"value": "活跃人数：<font color = '0xffffff'>$str$</font>"
+		},
+		{
+			"key": "2",
+			"value": "1.国王由全国玩家进行投票举荐，票数最高的玩家将成为国王\n2.国王持续上任7天，到期后将由下任国王接位，国王可连任\n3.举荐时间持续7天，由<font color = '0x06ff46'>每周一的0点</font>持续至<font color = '0x06ff46'>下周一的0点</font>，<font color = '0x06ff46'>举荐结束前一小时</font>不能进行报名\n4.每个玩家在每轮举荐只能进行一次投票，不能给自己投票"
+		},
+		{
+			"key": "3",
+			"value": "已经报名了！"
+		},
+		{
+			"key": "4",
+			"value": "虚位以待"
+		},
+		{
+			"key": "5",
+			"value": "银两:<font color = '0xFCF307'>$str$</font>"
+		},
+		{
+			"key": "6",
+			"value": "贡献度:<font color = '0xffffff'>$str$</font>"
+		},
+		{
+			"key": "7",
+			"value": "国库银两：<font color = '$color$'>$str$</font>"
+		},
+		{
+			"key": "9",
+			"value": "国民人数:"
+		},
+		{
+			"key": "10",
+			"value": "国库:"
+		},
+		{
+			"key": "11",
+			"value": "国力:"
+		},
+		{
+			"key": "12",
+			"value": "$lel$级后开启叛国功能"
+		},
+		{
+			"key": "13",
+			"value": "我的战功:"
+		},
+		{
+			"key": "14",
+			"value": "离活动结束还有:"
+		},
+		{
+			"key": "15",
+			"value": "占领了王城，"
+		},
+		{
+			"key": "16",
+			"value": "<font color = '0xD6BF86'>弱国</font>"
+		},
+		{
+			"key": "17",
+			"value": "<font color = '0xFFCC00'>强国</font>"
+		},
+		{
+			"key": "18",
+			"value": "<font size='30' color = '0xffffff'>$str$</font>"
+		},
+		{
+			"key": "19",
+			"value": "是否消耗<font color = '0xFFCC00'>$str$</font>"
+		},
+		{
+			"key": "20",
+			"value": "上周贡献：<font color = '0xffffff'>$str$</font>"
+		},
+		{
+			"key": "21",
+			"value": "活跃人数："
+		},
+		{
+			"key": "22",
+			"value": "<font color = '0xffffff'>$str$</font>"
+		},
+		{
+			"key": "23",
+			"value": "冷却时间:<font color = '0xff0000'>$value$秒</font>"
+		},
+		{
+			"key": "24",
+			"value": "无更换情报次数，无法操作"
+		},
+		{
+			"key": "25",
+			"value": "已获得最高品质情报，可前往交付"
+		},
+		{
+			"key": "26",
+			"value": "退出后30秒内无法再次进入该城池，是否确认退出？\n<font color = '0xff0000'>（本国全员退出城池后，将清空当前占领进度）</font>"
+		},
+		{
+			"key": "27",
+			"value": "我的排名：<font color = '0xffffff'>$str$</font>"
+		},
+		{
+			"key": "28",
+			"value": "官衔：<font color = '0xafeee9'>$str$</font>"
+		},
+		{
+			"key": "29",
+			"value": "贡献：<font color = '0xffcc00'>$value$</font>"
+		},
+		{
+			"key": "30",
+			"value": "当前御林军在线人数：$num$人\n（只有在主城、边境和国战场景下御林军才能传送到你旁边）"
+		},
+		{
+			"key": "31",
+			"value": "是否消耗"
+		},
+		{
+			"key": "32",
+			"value": "在全体国民的努力下，我国实力大大增加，国库日益充裕，国王有令：分钱了！"
+		},
+		{
+			"key": "33",
+			"value": "暂未犒赏可以领取！"
+		},
+		{
+			"key": "34",
+			"value": "国库不足，无法犒赏"
+		},
+		{
+			"key": "35",
+			"value": "国王才有权限操作"
+		},
+		{
+			"key": "36",
+			"value": "赏赐成功！"
+		},
+		{
+			"key": "37",
+			"value": "赏赐失败！"
+		}
+	],
+	"official": [
+		{
+			"key": "1",
+			"value": "国王"
+		},
+		{
+			"key": "2",
+			"value": "都督"
+		},
+		{
+			"key": "3",
+			"value": "丞相"
+		},
+		{
+			"key": "4",
+			"value": "将军"
+		},
+		{
+			"key": "5",
+			"value": "司马"
+		},
+		{
+			"key": "6",
+			"value": "御林军"
+		},
+		{
+			"key": "7",
+			"value": "<u>获取功勋</u>"
+		},
+		{
+			"key": "8",
+			"value": "激活"
+		},
+		{
+			"key": "9",
+			"value": "晋升"
+		},
+		{
+			"key": "10",
+			"value": "官衔等级不足"
+		},
+		{
+			"key": "11",
+			"value": "攻击威望值低于自身的玩家,<font color ='0x06ff46'>伤害增加$num$%</font>(排名前三的的玩家分别获得<font color='0x06ff46'>$str$</font>)"
+		},
+		{
+			"key": "12",
+			"value": "已经满阶"
+		},
+		{
+			"key": "13",
+			"value": "任务未完成"
+		},
+		{
+			"key": "14",
+			"value": "功勋不足"
+		},
+		{
+			"key": "15",
+			"value": "abcd/efghij$name$/kghlmnopqrstu/vwxyz1234567"
+		}
+	],
+	"jingmai": [
+		{
+			"key": "0",
+			"value": "<u><font size='22' color = '0xffcc00'>快速获取</font></u>"
+		},
+		{
+			"key": "1",
+			"value": "激活"
+		},
+		{
+			"key": "2",
+			"value": "突破"
+		},
+		{
+			"key": "3",
+			"value": "修炼"
+		},
+		{
+			"key": "4",
+			"value": "激活内功"
+		}
+	],
+	"yezhan": [
+		{
+			"key": "0",
+			"value": "立即更新"
+		},
+		{
+			"key": "1",
+			"value": "减少疲劳值并立即挑战\n\n<font color='0x65EF13'>（挑战失败不扣除元宝）</font>"
+		},
+		{
+			"key": "2",
+			"value": "当前疲劳已满是否消耗"
+		}
+	],
+	"forge": [
+		{
+			"key": "0",
+			"value": "强化"
+		},
+		{
+			"key": "1",
+			"value": "激活"
+		},
+		{
+			"key": "2",
+			"value": "所有部位强化等级达到$lev$级(可以激活)"
+		},
+		{
+			"key": "3",
+			"value": "所有部位强化等级达到$lev$级级<font color = '0xffcc00'>(已激活)</font>"
+		},
+		{
+			"key": "4",
+			"value": "所有部位强化等级达到$lev$级(<font color = '$color$'>$v1$</font>/$v2$)"
+		},
+		{
+			"key": "5",
+			"value": "满阶"
+		},
+		{
+			"key": "6",
+			"value": "突破"
+		},
+		{
+			"key": "7",
+			"value": "升星"
+		},
+		{
+			"key": "8",
+			"value": "装备部位升星总等级达到$lev$星(可以激活)"
+		},
+		{
+			"key": "9",
+			"value": "装备部位升星总等级达到$lev$星<font color = '0xffcc00'>(已激活)</font>"
+		},
+		{
+			"key": "10",
+			"value": "装备部位升星总等级达到$lev$星(<font color = '$color$'>$v1$</font>/$v2$)"
+		},
+		{
+			"key": "11",
+			"value": "将成功率提升至100%?"
+		},
+		{
+			"key": "12",
+			"value": "战斗力：<font color = '0xff0000'>$str$</font>"
+		},
+		{
+			"key": "13",
+			"value": "当前$v$阶段"
+		},
+		{
+			"key": "14",
+			"value": "下级$v$阶段"
+		}
+	],
+	"baoku": [
+		{
+			"key": "0",
+			"value": "库存不足"
+		},
+		{
+			"key": "1",
+			"value": "限购机会已经用完"
+		},
+		{
+			"key": "2",
+			"value": "兑换道具不足！"
+		},
+		{
+			"key": "3",
+			"value": "兑换该道具？"
+		},
+		{
+			"key": "4",
+			"value": "<font color ='0xffcc00'>$v$</font>"
+		},
+		{
+			"key": "5",
+			"value": "限购：<font color = '$color$'>$v1$</font>/$v2$"
+		},
+		{
+			"key": "6",
+			"value": "库存：<font color = '$color$'>$v1$</font>/$v2$"
+		}
+	],
+	"yunliang": [
+		{
+			"key": "0",
+			"value": "<font color = '0xFFFFFF'>未启动</font>"
+		},
+		{
+			"key": "1",
+			"value": "<font color = '0xFFFFFF'>发车</font>"
+		},
+		{
+			"key": "2",
+			"value": "<font color = '0xFFFFFF'>护送</font>"
+		},
+		{
+			"key": "3",
+			"value": "<font color = '0xffcc00'>护送中</font>"
+		},
+		{
+			"key": "4",
+			"value": "<font color = '0xFFFFFF'>掠夺</font>"
+		},
+		{
+			"key": "5",
+			"value": "<font color = '0xFF0000'>掠夺中</font>"
+		},
+		{
+			"key": "6",
+			"value": "<font color = '0xFFFFFF'>交车</font>"
+		},
+		{
+			"key": "7",
+			"value": "<font color = '0xFFCC00'>已交车</font>"
+		},
+		{
+			"key": "8",
+			"value": "<font color = '0xFF0000'>被击毁</font>"
+		},
+		{
+			"key": "9",
+			"value": "$str1$<font color = '0xFF0000'>被</font>$str2$<font color = '0xFF0000'>击败了</font>"
+		},
+		{
+			"key": "10",
+			"value": "$str1$<font color = '0xFF0000'>被</font>$str2$<font color = '0xFF0000'>击败了</font>"
+		}
+	],
+	"quilt": [
+		{
+			"key": "1",
+			"value": "0xFFFFFF"
+		},
+		{
+			"key": "2",
+			"value": "0x06FF46"
+		},
+		{
+			"key": "3",
+			"value": "0x00E5FB"
+		},
+		{
+			"key": "4",
+			"value": "0xCD6CFF"
+		},
+		{
+			"key": "5",
+			"value": "0xFFCC00"
+		}
+	],
+	"help": [
+		{
+			"key": "2041",
+			"value": "1.玄兽区分<font color = '0x06FF46'>出战</font>和<font color = '0x06FF46'>守护</font>两种状态，出战玄兽<font color = '0x06FF46'>仅限1个</font>，跟随元神一起战斗，<font color = '0x06FF46'>不会受到敌方攻击</font>\n2.出战玄兽仅生效出战类型的技能，守护位的玄兽仅生效守护类型的技能\n3.出战玄兽的等级越高，继承元神攻击力的比例就越高"
+		},
+		{
+			"key": "2042",
+			"value": "1.玄兽蛋的品质越高，所需孵化的时间越长\n2.玄兽孵化槽的等级越高，孵化玄兽蛋所需的时间越短\n3.多余的玄兽可进行放生，放生可获得兽魂材料，用于提升玄兽等级"
+		},
+		{
+			"key": "2043",
+			"value": "1.玄兽融合后，主玄兽保留，<font color = '0x06FF46'>副玄兽消失</font>\n2.主玄兽将直接吸收副玄兽可产出的兽魂并进行升级，若主玄兽已达等级上限则溢出经验不保留\n3.玄兽融合时，可点击<font color = '0x06FF46'>主玄兽的技能进行锁定</font>，锁定的技能<font color = '0x06FF46'>在融合后直接保留</font>\n4.主玄兽的品质越高，可锁定的技能数就越多。<font color = '0x06FF46'>锁定的技能在融合时需要消耗一定的元宝</font>\n5.融合时，若副玄兽存在主玄兽没有的技能种类。则融合后有概率增加主玄兽的技能数量"
+		},
+		{
+			"key": "2044",
+			"value": "1.玄兽可通过消耗玄兽技能书吸收技能，吸收后的技能将<font color = '0x06FF46'>随机覆盖</font>1个已有技能\n2.<font color = '0x06FF46'>同类型的技能</font>，若技能书等级高于玄兽技能等级，则直接覆盖对应的技能。技能书等级低于或等于玄兽技能等级，则无法进行吸收\n3.<font color = '0x06FF46'>锁定状态下的技能</font>将不会被技能书进行覆盖"
+		},
+		{
+			"key": "2045",
+			"value": "1.玄兽继承后，主玄兽保留、<font color = '0x06FF46'>副玄兽消失</font>\n2.继承后，新的玄兽等级将取<font color = '0x06FF46'>两者中最高等级</font>\n3.主玄兽的品质必须<font color = '0x06FF46'>大于或等于</font>副玄兽品质\n4技能保留问题\n 主玄兽技能数<=副玄兽技能数，继承副玄兽的所有技能\n 主玄兽技能数>副玄兽技能数，技能类型相同的直接继承副玄兽技能，技能类型不同的则随机覆盖"
+		},
+		{
+			"key": "902",
+			"value": "1.BOSS<font color = '0x00FF00'>伤害第一</font>获得的奖励是<font color = '0x00FF00'>参与奖的两倍</font>\n2.战斗中可以通过<font color = '0x00FF00'>元宝鼓舞</font>提升元神伤害，最高可以<font color = '0x00FF00'>提升200%的伤害</font>\n3.和<font color = '0x00FF00'>伤害第一</font>的玩家<font color = '0x00FF00'>国家相同</font>可以获得<font color = '0x00FF00'>额外奖励</font>\n4.官府悬赏次数<font color = '0x00FF00'>每2小时恢复1次</font>，上限10次超过则不恢复。"
+		},
+		{
+			"key": "902-1",
+			"value": "1.BOSS<font color = '0x00FF00'>伤害第一</font>获得的奖励是<font color = '0x00FF00'>参与奖的两倍</font>\n2.战斗中可以通过<font color = '0x00FF00'>元宝鼓舞</font>提升元神伤害，最高可以<font color = '0x00FF00'>提升200%的伤害</font>\n3.和<font color = '0x00FF00'>伤害第一</font>的玩家<font color = '0x00FF00'>国家相同</font>可以获得<font color = '0x00FF00'>额外奖励</font>\n4.官府悬赏次数<font color = '0x00FF00'>每2小时恢复1次</font>，上限10次超过则不恢复。"
+		},
+		{
+			"key": "904",
+			"value": "1 .<font color = '0x00FF00'>首个</font>对BOSS造成伤害的玩家<font color = '0x00FF00'>获得归属，击杀当前归属者</font>，可以成为新的归属者\n2 .成为归属者后，每过<font color = '0x00FF00'>10秒</font>，当前归属者生命上限<font color = '0x00FF00'>提高20%</font>，最多增加<font color = '0x00FF00'>400%的生命上限</font>。当前归属者被击杀后，生命上限属性清除，新的归属者<font color = '0x00FF00'>重新叠加</font>。\n3 .只有<font color = '0x00FF00'>最终击杀时的归属者</font>才能获得归属奖励。\n4 .当<font color = '0x00FF00'>帝装</font>达到一定战力，则开启对应<font color = '0x00FF00'>征讨黄巾BOSS</font>。\n5 .征讨黄巾每日<font color = '0x00FF00'>初始次数为5次</font>，每天凌晨<font color = '0x00FF00'>0点刷新</font>，可以通过商店购买<font color = '0x00FF00'>征讨卷轴</font>增加挑战次数。\n6 .每次挑战<font color = '0x00FF00'>间隔60秒</font>。"
+		},
+		{
+			"key": "904-1",
+			"value": "1 .<font color = '0x00FF00'>首个</font>对BOSS造成伤害的玩家<font color = '0x00FF00'>获得归属，击杀当前归属者</font>，可以成为新的归属者\n2 .成为归属者后，每过<font color = '0x00FF00'>10秒</font>，当前归属者生命上限<font color = '0x00FF00'>提高20%</font>，最多增加<font color = '0x00FF00'>400%的生命上限</font>。当前归属者被击杀后，生命上限属性清除，新的归属者<font color = '0x00FF00'>重新叠加</font>。\n3 .只有<font color = '0x00FF00'>最终击杀时的归属者</font>才能获得归属奖励。\n4 .当<font color = '0x00FF00'>帝装</font>达到一定战力，则开启对应<font color = '0x00FF00'>征讨黄巾BOSS</font>。\n5 .征讨黄巾每日<font color = '0x00FF00'>初始次数为5次</font>，每天凌晨<font color = '0x00FF00'>0点刷新</font>，可以通过商店购买<font color = '0x00FF00'>征讨卷轴</font>增加挑战次数。\n6 .每次挑战<font color = '0x00FF00'>间隔60秒</font>。"
+		},
+		{
+			"key": "905",
+			"value": "1.<font color = '0x00FF00'>三个国家</font>中分别<font color = '0x00FF00'>最早对BOSS造成伤害</font>并<font color = '0x00FF00'>有归属次数</font>的玩家成为<font color = '0x00FF00'>本国挑战者</font>，本国挑战者至多1人。同时<font color = '0x00FF00'>挑战者中最早对BOSS造成伤害</font>的玩家<font color = '0x00FF00'>成为归属者</font>。\n2.当归属者<font color = '0x00FF00'>被敌国玩家击杀</font>，则<font color = '0x00FF00'>归属权移交至该国挑战者</font>。如果该国<font color = '0x00FF00'>没有挑战者存在</font>则<font color = '0x00FF00'>归属权清零</font>。\n3.<font color = '0x00FF00'>没有挑战者</font>或<font color = '0x00FF00'>挑战者死亡</font>时，<font color = '0x00FF00'>协助者不能对BOSS造成伤害</font>\n4.<font color = '0x00FF00'>相同国家</font>的玩家之间<font color = '0x00FF00'>无法抢夺归属权</font>\n5.<font color = '0x00FF00'>没有归属次数</font>或者<font color = '0x00FF00'>已有本国挑战者</font>时进入挑战默认<font color = '0x00FF00'>成为协助者</font>，或者点击勾选协助者选项成为协助者\n6.边境狩猎每天有<font color = '0x00FF00'>3次归属</font>次数，10次协助次数.<font color = '0x00FF00'>每日0点刷新</font>。\n7.当前<font color = '0x00FF00'>BOSS死亡时的归属者</font>获得归属奖励，和<font color = '0x00FF00'>最终归属者同国家的协助者</font>获得协助奖励。"
+		},
+		{
+			"key": "906",
+			"value": "1.只有<font color = '0x00FF00'>归属者才能对BOSS造成伤害</font>\n2.首个对BOSS造成伤害的玩家成为归属者，当为<font color = '0x00FF00'>归属者</font>时开始计算<font color = '0x00FF00'>占领时长</font>，当BOSS死亡时，<font color = '0x00FF00'>累计占领时长最长</font>的玩家获得归属奖励，其他玩家无奖励\n3.当归属者被击杀时，可以通过<font color = '0x00FF00'>原地复活保留占领时间</font>\n4.当玩家<font color = '0x00FF00'>离开BOSS挑战</font>时，当前<font color = '0x00FF00'>占领时间清零</font>"
+		},
+		{
+			"key": "906-1",
+			"value": "1.只有<font color = '0x00FF00'>归属者才能对BOSS造成伤害</font>\n2.首个对BOSS造成伤害的玩家成为归属者，当为<font color = '0x00FF00'>归属者</font>时开始计算<font color = '0x00FF00'>占领时长</font>，当BOSS死亡时，<font color = '0x00FF00'>累计占领时长最长</font>的玩家获得归属奖励，其他玩家无奖励\n3.当归属者被击杀时，可以通过<font color = '0x00FF00'>原地复活保留占领时间</font>\n4.当玩家<font color = '0x00FF00'>离开BOSS挑战</font>时，当前<font color = '0x00FF00'>占领时间清零</font>"
+		},
+		{
+			"key": "907",
+			"value": "1.讨伐流寇中，根据<font color = '0x00FF00'>国家总伤害排名</font>结算奖励，总伤害<font color = '0x00FF00'>排名第一</font>的国家获得<font color = '0x00FF00'>归属奖励</font>，其余参与玩家获得参与奖励。奖励<font color = '0x00FF00'>通过邮件</font>发送给所有<font color = '0x00FF00'>参与活动并造成伤害</font>的玩家\n2.通过<font color = '0x00FF00'>元宝鼓舞</font>能够<font color = '0x00FF00'>提升本国所有玩家伤害</font>，每次提升10%，个人鼓舞<font color = '0x00FF00'>限制提升5次</font>，每个国家<font color = '0x00FF00'>最多提升300%</font>\n3.讨伐流寇有<font color = '0x00FF00'>时间限制</font>，规定时间内<font color = '0x00FF00'>未击杀BOSS</font>则全体视为<font color = '0x00FF00'>失败</font>"
+		},
+		{
+			"key": "907-1",
+			"value": "造成伤害第一的国家的所有挑战玩家可获得归属奖励，其余国家的参与者可获得参与奖励"
+		},
+		{
+			"key": "908",
+			"value": "劫库抢银说明"
+		},
+		{
+			"key": "908-1",
+			"value": "1.个人奖励分归属奖和参与奖，分别为归属国和非归属国在场玩家获得，可以立即获得一定的银两\n2.国家奖励为归属国额外可以获得一定的银两到国库中，仅归属国可获得"
+		},
+		{
+			"key": "802",
+			"value": "1.镇守边关每天可以<font color = '0x00FF00'>无限挑战</font>，只保留最高击杀数。\n2.在<font color = '0x00FF00'>限时3分钟</font>内，击杀60、80、100、120、140个敌人可以分别领取对应奖励。3.每个奖励宝箱根据VIP等级可以领取额外奖励。\n4.奖励找回，可以找回宝箱中额外的VIP奖励，当玩家获得指定VIP等级后可全部领取\n5.当领取完当前层最高奖励之后，进入下一层挑战，击杀数清零。"
+		},
+		{
+			"key": "804",
+			"value": "1.试炼塔每天可以<font color = '0x00FF00'>无限挑战</font>，每日奖励按<font color = '0x00FF00'>历史最高层数领取</font>。\n2.<font color = '0x00FF00'>限时1分40秒内</font>击杀BOSS可以进入下一层，并领取对应层数通过奖励\n3.<font color = '0x00FF00'>每一重天共10层</font>通关第十层，自动进入下一关，并增加<font color = '0x00FF00'>一次幸运转盘抽奖</font>次数.\n4.通关试炼塔可以解锁神石槽。"
+		},
+		{
+			"key": "805",
+			"value": "1.千里单骑<font color = '0x00FF00'>每天两次</font>挑战机会，每日<font color = '0x00FF00'>凌晨0点刷新</font>，<font color = '0x00FF00'>失败或者退出不扣次数</font>。\n2.进入<font color = '0x00FF00'>下一关需要三星通关</font>当前关卡。\n3.完成<font color = '0x00FF00'>关卡对应要求</font>的情况下<font color = '0x00FF00'>击杀BOSS</font>，可以获得<font color = '0x00FF00'>对应星级的通关奖励</font>\n4.<font color = '0x00FF00'>任意星级通关</font>对应关卡，都<font color = '0x00FF00'>能开启相对应的帝装部位</font>。"
+		},
+		{
+			"key": "701",
+			"value": "1.单挑会寻找和<font color = '0x00FF00'>自身等级相近</font>的玩家进行PK，战胜可以获得奖励，同时<font color = '0x00FF00'>增加疲劳值</font>，每半小时刷新一位玩家，也可以通过元宝快速刷新\n2.当<font color = '0x00FF00'>疲劳值大于或等于100</font>时，将<font color = '0x00FF00'>不能进行单挑</font>挑战，需要等待疲劳值下降，或者通过元宝直接减少疲劳值。\n3.奖励排名为本日击杀值排名，每日凌晨0点获得排行榜奖励，并<font color = '0x00FF00'>清除当前击杀值</font>。"
+		},
+		{
+			"key": "703",
+			"value": "1.每天<font color = '0x00FF00'>12:00~14:00</font>和<font color = '0x00FF00'>18:00~20：00</font>开启国家运粮活动。\n2.活动中需要国家官职达到<font color = '0x00FF00'>国王或者宰相</font>的玩家，点击发车。其余玩家可以<font color = '0x00FF00'>选择护送本国粮车</font>或者<font color = '0x00FF00'>前往掠夺敌国粮车</font>。\n3.当本国粮车<font color = '0x00FF00'>安全抵到终点</font>后，本国玩家获得奖励。\n4.当粮车<font color = '0x00FF00'>没有抵达目的地前被击毁</font>，完成<font color = '0x00FF00'>最后一击的玩家所归属的国家将获得奖励</font>，同时造成最后一击伤害的玩家获得额外奖励。\n5.如果有两个国家同时掠夺一个国家的粮车，最终奖励将<font color = '0x00FF00'>只归属于完成最后一击的国家</font>。"
+		},
+		{
+			"key": "704",
+			"value": "1.<font color = '0x00FF00'>每周二四六全天开启</font>刺探敌情活动，在<font color = '0x00FF00'>12点~14点、18点~20点</font>，为双倍奖励时间。\n2.活动开启后，<font color = '0x00FF00'>每个玩家拥有3次刺探奖励次数</font>，奖励次数用完之后，不能继续参加刺探活动。\n3.刺探的情报<font color = '0x00FF00'>分为五个品级</font>：白、蓝、黄、绿、紫分别对应自身的奖励内容。\n4.获得情报时，<font color = '0x00FF00'>可以选择等待30秒之后再次获取情报</font>，来刷新情报品质，每次活动<font color = '0x00FF00'>当天拥有6次更换情报的机会</font>。\n5.每个国家<font color = '0x00FF00'>每周初始拥有1000点情报值，周六活动结束</font>时根据所有国家的<font color = '0x00FF00'>情报值将按百比发奖</font>，发放国库银两奖励。\n6.当一个<font color = '0x00FF00'>国家情报值为0</font>时，可以<font color = '0x00FF00'>继续刺探该国家</font>获取刺探奖励，但<font color = '0x00FF00'>不会获得情报值</font>。\n7.刺探活动开始后可以<font color = '0x00FF00'>击杀敌国玩家</font>，获得功勋和勋章。"
+		},
+		{
+			"key": "705",
+			"value": "1.国战活动开启后，<font color = '0x00FF00'>所有玩家传送至国战地图</font>，如果在特殊场景中时，待玩家结算结束传送。\n2.国战中三个国家分别具有旗帜，<font color = '0x00FF00'>旗帜被攻破则战败</font>，全国玩家退出战场\n3.王城具有特殊旗帜，<font color = '0x00FF00'>攻破王城旗帜</font>，则<font color = '0x00FF00'>攻击最后一刀的玩家所在国家获得王城控制权</font>，同时本国据点旗帜无敌，<font color = '0x00FF00'>王城旗帜变为该国旗帜</font>，在国战期间<font color = '0x00FF00'>守护王城</font>旗帜至活动结束，将<font color = '0x00FF00'>获得国战胜利</font>。\n4.国战过程中，官职为<font color = '0x00FF00'>国王或者将军</font>的玩家可以对玩家发布<font color = '0x00FF00'>指令进行指挥操作</font>，切换玩家前进路线，指令和玩家自身操作优先度平级不冲突，以最后操作为主。\n5.在国战期间，在国战所有玩家将<font color = '0x00FF00'>获得1.5倍经验加成</font>，同时<font color = '0x00FF00'>每10秒获得大量额外经验</font>.\n6.每击杀一个小兵/战车获得1点战功、每击杀一个他国玩家获得2点战功、每催毁一个防守塔、击杀御林军获得5点战功、每击杀一个将领可获得7点战功、每击杀一个大将获得10点战功，结算时，<font color = '0x00FF00'>各国将按战功排名进行奖励发放，战功奖励无关国战输赢</font>。"
+		},
+		{
+			"key": "101",
+			"value": "1.国王由全国玩家进行<font color = '0x00FF00'>投票举荐</font>，最终获得<font color = '0x00FF00'>票数最高的玩家</font>将成为国王，若<font color = '0x00FF00'>票数相同</font>则<font color = '0x00FF00'>报名时间相对较早</font>的玩家成为国王。\n2.<font color = '0x00FF00'>国王任期为7天</font>，到期后将由下任国王接位，国王可连任\n3.<font color = '0x00FF00'>举荐时间持续7天</font>，由每周1的00:00持续至下周1的00:00，举荐结束前一小时不能进行报名\n4.每个玩家在<font color = '0x00FF00'>每轮举荐只能进行一次投票</font>，不能给自己投票"
+		},
+		{
+			"key": "104",
+			"value": "1.玩家可以<font color = '0x00FF00'>消耗召唤令</font>进行召唤魔王BOSS，每个国家<font color = '0x00FF00'>每天最多可召唤30只BOSS</font>（全国玩家共享），达到上限后则不能再进行召唤。\n2.魔王BOSS召唤之后有<font color = '0x00FF00'>击杀时间限制</font>，超过规定时间未击杀则视为挑战失败。\n3.在规定时间内，可以<font color = '0x00FF00'>无限挑战</font>同一BOSS，直至BOSS被击杀。\n4.击杀BOSS后，根据玩家总伤害排名通过邮件发放伤害排名奖励。\n5.最后一击击杀BOSS的玩家，获得最后一击奖励。\n6.召唤BOSS的玩家，无论是否最终击杀BOSS都将获得召唤奖励。\n7.召唤者等级越高，召唤的魔王等级越高。"
+		},
+		{
+			"key": "104-1",
+			"value": "1.召唤奖励：BOSS被击杀时，召唤BOSS的玩家可以获得召唤奖励，奖励通过邮件发放<font color = '0x00FF00'>（无论召唤者是否参与挑战均可获得召唤奖励）</font>\n2.最后一击奖励：完成最后一击的玩家可获得击杀奖励，挑战结束时获得"
+		},
+		{
+			"key": "105",
+			"value": "1.<font color = '0x00FF00'>三国演义通关到一定关卡解锁对应的城池</font>。\n2.攻占城池后，<font color = '0x00FF00'>具有一段时间的保护期</font>，保护期内产出银两归入占领国国库。保护期结束后，城池回归中立，可以再次抢夺。\n3.每座城池占领都需要<font color = '0x00FF00'>击破原有旗帜</font>，首次攻击旗帜的玩家所在国家获得归属，并开始累积归属时间，当进度达到100%则占领成功，<font color = '0x00FF00'>占领国所有参战玩家获得奖励</font>。\n4.当旗帜被击破时，没有国家进度达到100%，则进度最高的国家占领城池。\n5.当旗帜10秒内没有受到攻击则清空归属，回复满血。"
+		},
+		{
+			"key": "105-1",
+			"value": "1.成功攻占城池的玩家，在挑战结束时会获得个人攻占奖励\n2.参与攻占的玩家如果结算时不在副本场景内，则无法获得奖励，同时也不会增加疲劳值\n3.占领城池的国家，在占领时间结束后，可以获得相应的国库银两奖励"
+		},
+		{
+			"key": "qxsd",
+			"value": "前线杀敌帮助"
+		},
+		{
+			"key": "ciTan",
+			"value": "刺探帮助"
+		},
+		{
+			"key": "ciTanNpc",
+			"value": "1.<font color = '0x00FF00'>每周二四六全天开启</font>刺探敌情活动，在<font color = '0x00FF00'>12点~14点、18点~20点</font>，为双倍奖励时间。\n2.活动开启后，<font color = '0x00FF00'>每个玩家拥有3次刺探奖励次数</font>，奖励次数用完之后，不能继续参加刺探活动。\n3.刺探的情报<font color = '0x00FF00'>分为五个品级</font>：白、蓝、黄、绿、紫分别对应自身的奖励内容。\n4.获得情报时，<font color = '0x00FF00'>可以选择等待30秒之后再次获取情报</font>，来刷新情报品质，每次活动<font color = '0x00FF00'>当天拥有6次更换情报的机会</font>。\n5.每个国家<font color = '0x00FF00'>每周初始拥有1000点情报值，周六活动结束</font>时根据所有国家的<font color = '0x00FF00'>情报值将按百比发奖</font>，发放国库银两奖励。\n6.当一个<font color = '0x00FF00'>国家情报值为0</font>时，可以<font color = '0x00FF00'>继续刺探该国家</font>获取刺探奖励，但<font color = '0x00FF00'>不会获得情报值</font>。\n7.刺探活动开始后可以<font color = '0x00FF00'>击杀敌国玩家</font>，获得功勋和勋章。"
+		},
+		{
+			"key": "gj_jj",
+			"value": "1.国王由全国玩家进行投票举荐 ，票数最高的玩家将成为国王\n2.国王持续上任7天，到期后将由下任国王接位，国王可连任\n3.举荐时间持续7天，由每周1的00: 0 0持续至下周1的00: 0 0，举荐结束前一小时不能进行报名\n4.每个玩家在每轮举荐只能进行一次投票，不能给自己投票"
+		},
+		{
+			"key": "gj_boss",
+			"value": "1.魔王被召唤出来后，全体成员可以一齐合力击杀。\n2.击杀后按伤害排名发放奖励，召唤者可获得特殊奖励。\n3.召唤者等级越高，召唤的魔王等级越高。\n4.魔王未被击杀，逃跑了则无法获得任何奖励。"
+		},
+		{
+			"key": "gclc_boss",
+			"value": "1111"
+		},
+		{
+			"key": "pet_3",
+			"value": "1.主玄兽锁定的技能直接保留\n2.主、副玄兽两者相同类型的技能，若主玄兽技能等级较高，则直接保留"
+		},
+		{
+			"key": "pet_4",
+			"value": "主、副玄兽两者的所有技能，除去必定保留的技能，剩余的技能将随机产出。"
+		},
+		{
+			"key": "offical",
+			"value": "官衔说明"
+		},
+		{
+			"key": "belle",
+			"value": "1.登录达到指定天数且完成解锁条件即可结缘红颜\n2.倾国倾城技能需要所有红颜均穿戴首饰才可激活，技能等级跟随首饰品质提高而提升\n3.参与讨伐流寇及过关斩将有概率掉落稀有首饰，首饰品质及星级越高，属性越好"
+		},
+		{
+			"key": "sjp",
+			"value": "1.收集并激活神将卡能提升神将专属技能等级\n2.集齐特定的武将组合，能激活更为强大的组合神技\n3.提升神将卡等级会可以使原有技能升级，到达15星更能进行神将觉醒\n4.神将卡满级之后，可以分解对应的神将卡，获得将魂用于在将魂商店兑换其他神将卡。"
+		},
+		{
+			"key": "sjj",
+			"value": "1.通过神将卡升级能提升对应的神技等级。\n2.不同的神将具有不同的效果，合理搭配能极大提升战斗力\n3.不同系的神将技无法同时上阵，如将军的输出系无法和肉盾系技能同时上阵\n4.根据技能品质作用，点击自动上阵会上阵较好的技能组合，但需要玩家随机应变，在不同场合使用不同技能。\n5.刷怪、PVP、对抗BOSS分别具有不同的技能组，互不干扰"
+		},
+		{
+			"key": "ss",
+			"value": "1.消耗一定数量的神石精华可以升级神石\n2.背包中有不同类神石或同类更高品质神石时可替换\n3.所有神石都可以分解成神石精华，分解为无损分解\n4.同类神石只能镶嵌一个，开启中间孔位可多镶嵌一个同类神石 "
+		},
+		{
+			"key": "gjyl",
+			"value": "1.每天12:00~14:00和18:00~20:00开启\n2.护送本国粮车到达前线战场\n3.掠夺敌国粮车获得奖励"
+		},
+		{
+			"key": "expfb",
+			"value": "经验副本帮助"
+		},
+		{
+			"key": "gzgz",
+			"value": "1.国战活动开启后，<font color = '0x00FF00'>所有玩家传送至国战地图</font>，如果在特殊场景中时，待玩家结算结束传送。\n2.国战中三个国家分别具有旗帜，<font color = '0x00FF00'>旗帜被攻破则战败</font>，全国玩家退出战场\n3.王城具有特殊旗帜，<font color = '0x00FF00'>攻破王城旗帜</font>，则<font color = '0x00FF00'>攻击最后一刀的玩家所在国家获得王城控制权</font>，同时本国据点旗帜无敌，<font color = '0x00FF00'>王城旗帜变为该国旗帜</font>，在国战期间<font color = '0x00FF00'>守护王城</font>旗帜至活动结束，将<font color = '0x00FF00'>获得国战胜利</font>。\n4.国战过程中，官职为<font color = '0x00FF00'>国王或者将军</font>的玩家可以对玩家发布<font color = '0x00FF00'>指令进行指挥操作</font>，切换玩家前进路线，指令和玩家自身操作优先度平级不冲突，以最后操作为主。\n5.在国战期间，在国战所有玩家将<font color = '0x00FF00'>获得1.5倍经验加成</font>，同时<font color = '0x00FF00'>每10秒获得大量额外经验</font>.\n6.每击杀一个小兵/战车获得1点战功、每击杀一个他国玩家获得2点战功、每催毁一个防守塔、击杀御林军获得5点战功、每击杀一个将领可获得7点战功、每击杀一个大将获得10点战功，结算时，<font color = '0x00FF00'>各国将按战功排名进行奖励发放，战功奖励无关国战输赢</font>。"
+		}
+	],
+	"pet": [
+		{
+			"key": "1",
+			"value": "玄兽等级每提升10级，玄兽属性增加百分比人物攻击力"
+		},
+		{
+			"key": "2",
+			"value": "下级效果："
+		},
+		{
+			"key": "3",
+			"value": "当前效果："
+		},
+		{
+			"key": "4",
+			"value": "玄兽等级达到$str$级<font color = '0xFFcc00'>（已激活）</font>"
+		},
+		{
+			"key": "5",
+			"value": "玄兽等级达到$str$级（<font color = '0xFF0000'>$v1$</font>/$v2$）"
+		},
+		{
+			"key": "6",
+			"value": "附加人物攻击力   $str$"
+		},
+		{
+			"key": "7",
+			"value": "官衔等级达到$str$开启"
+		},
+		{
+			"key": "8",
+			"value": "解锁第$str$个元神后开启"
+		}
+	],
+	"soulgem": [
+		{
+			"key": "31",
+			"value": "青龙魂魄"
+		},
+		{
+			"key": "32",
+			"value": "白虎魂魄"
+		},
+		{
+			"key": "33",
+			"value": "玄武魂魄"
+		},
+		{
+			"key": "34",
+			"value": "朱雀魂魄"
+		}
+	],
+	"Daliy": [
+		{
+			"key": "0",
+			"value": "每日0点重置挑战次数\n官衔等级越高，收益越高"
+		},
+		{
+			"key": "1",
+			"value": "VIP4可以扫荡"
+		},
+		{
+			"key": "2",
+			"value": "每日次数用完"
+		},
+		{
+			"key": "3",
+			"value": "每日购买次数用完"
+		},
+		{
+			"key": "4",
+			"value": "挑战"
+		},
+		{
+			"key": "5",
+			"value": "扫荡"
+		},
+		{
+			"key": "6",
+			"value": "已挑战完"
+		},
+		{
+			"key": "7",
+			"value": "挑战次数：$v$"
+		},
+		{
+			"key": "8",
+			"value": "官衔达到$v$级"
+		},
+		{
+			"key": "9",
+			"value": "角色等级达到$v$级"
+		},
+		{
+			"key": "10",
+			"value": "请先通关上一关卡"
+		},
+		{
+			"key": "11",
+			"value": "通过$str$章节可以领取！"
+		},
+		{
+			"key": "12",
+			"value": "可购买扫荡次数：$v$"
+		},
+		{
+			"key": "13",
+			"value": "可免费扫荡次数：$v$"
+		},
+		{
+			"key": "14",
+			"value": "购买一次挑战次数？\n<font color ='0x00e5fb'>今日剩余购买次数</font><font color ='0x06ff46'>($v1$/$v2$)</font>"
+		},
+		{
+			"key": "15",
+			"value": "完成任务$v$后"
+		},
+		{
+			"key": "16",
+			"value": "您已经成功通过！"
+		},
+		{
+			"key": "17",
+			"value": "可购买挑战次数：$v$"
+		}
+	],
+	"sjp": [
+		{
+			"key": "lvxq",
+			"value": "人物等级达到($value$/$value1$)"
+		},
+		{
+			"key": "yjx",
+			"value": "<u><font color='#00FF00'>【觉醒】</font></u>"
+		},
+		{
+			"key": "yjx1",
+			"value": "觉"
+		},
+		{
+			"key": "fj",
+			"value": "<u><font color='#FFCC00'>分解</font></u>"
+		},
+		{
+			"key": "autoup",
+			"value": "(满足时自动升级)"
+		},
+		{
+			"key": "juexing",
+			"value": "觉醒"
+		},
+		{
+			"key": "jihuo",
+			"value": "激活"
+		},
+		{
+			"key": "levelup",
+			"value": "升级"
+		},
+		{
+			"key": "xiaohao",
+			"value": "消耗："
+		},
+		{
+			"key": "levelyq",
+			"value": "等级要求："
+		},
+		{
+			"key": "zhuanshengyq",
+			"value": "转生要求："
+		},
+		{
+			"key": "officeyq",
+			"value": "官衔要求："
+		},
+		{
+			"key": "ct_0",
+			"value": "空"
+		},
+		{
+			"key": "ct_1",
+			"value": "魏"
+		},
+		{
+			"key": "ct_2",
+			"value": "蜀"
+		},
+		{
+			"key": "ct_3",
+			"value": "吴"
+		},
+		{
+			"key": "ct_4",
+			"value": "群"
+		},
+		{
+			"key": "name",
+			"value": "名称："
+		},
+		{
+			"key": "ct",
+			"value": "类型："
+		},
+		{
+			"key": "level",
+			"value": "等级：$value$级"
+		},
+		{
+			"key": "guishu",
+			"value": "归属："
+		},
+		{
+			"key": "quality",
+			"value": "品质："
+		},
+		{
+			"key": "skilllevel",
+			"value": "技能等级：$value$级"
+		},
+		{
+			"key": "sjpsx",
+			"value": "<font color='0xD6BF86'>当前属性：</font>\n"
+		},
+		{
+			"key": "t_0",
+			"value": "空"
+		},
+		{
+			"key": "t_1",
+			"value": "将军型"
+		},
+		{
+			"key": "t_2",
+			"value": "军师型"
+		},
+		{
+			"key": "t_3",
+			"value": "统领型"
+		},
+		{
+			"key": "t_4",
+			"value": "杂碎"
+		},
+		{
+			"key": "p_0",
+			"value": "空"
+		},
+		{
+			"key": "p_1",
+			"value": "<font color='0xffffff'>普通</font>"
+		},
+		{
+			"key": "p_2",
+			"value": "<font color='0x00F9FF'>良好</font>"
+		},
+		{
+			"key": "p_3",
+			"value": "<font color='0xFFFF00'>优秀</font>"
+		},
+		{
+			"key": "p_4",
+			"value": "<font color='0x00FF00'>完美</font>"
+		},
+		{
+			"key": "p_5",
+			"value": "<font color='0xFF00FF'>无双</font>"
+		},
+		{
+			"key": "p_6",
+			"value": "<font color='0xFF00FF'>6品</font>"
+		},
+		{
+			"key": "p_7",
+			"value": "<font color='0xFF00FF'>7品</font>"
+		},
+		{
+			"key": "p_8",
+			"value": "<font color='0xFF00FF'>8品</font>"
+		},
+		{
+			"key": "p_9",
+			"value": "<font color='0xFF00FF'>9品</font>"
+		},
+		{
+			"key": "p_10",
+			"value": "<font color='0xFF00FF'>10品</font>"
+		},
+		{
+			"key": "skill_t",
+			"value": "技能类型："
+		},
+		{
+			"key": "skill_t0",
+			"value": "无"
+		},
+		{
+			"key": "skill_t1",
+			"value": "爆发"
+		},
+		{
+			"key": "skill_t2",
+			"value": "迅捷"
+		},
+		{
+			"key": "skill_t3",
+			"value": "肉盾"
+		},
+		{
+			"key": "skill_t4",
+			"value": "火焰"
+		},
+		{
+			"key": "skill_t5",
+			"value": "雷电"
+		},
+		{
+			"key": "skill_t6",
+			"value": "冰霜"
+		},
+		{
+			"key": "skill_t7",
+			"value": "召唤"
+		},
+		{
+			"key": "skill_t8",
+			"value": "输出"
+		},
+		{
+			"key": "skill_t9",
+			"value": "支援"
+		},
+		{
+			"key": "skillcd",
+			"value": "技能冷却："
+		},
+		{
+			"key": "skilltypechange",
+			"value": "技能类型不同,是否清空技能表进行替换?"
+		},
+		{
+			"key": "sjz",
+			"value": "将魂:"
+		},
+		{
+			"key": "csinfo",
+			"value": "是否消耗<font color='0xffff00'>$value1$</font>个<font color='0x00ff00'>$value2$</font>，重生神将？\n<font color='0x00e5fb'>（重生后无损返还兑换神将卡所需的银两或勋章）</font>"
+		},
+		{
+			"key": "suse",
+			"value": "$value$中使用"
+		},
+		{
+			"key": "suseType",
+			"value": "刷怪_刷BOSS_PVP"
+		},
+		{
+			"key": "tab0",
+			"value": "刷怪"
+		},
+		{
+			"key": "tab1",
+			"value": "BOSS"
+		},
+		{
+			"key": "tab2",
+			"value": "PVP"
+		}
+	],
+	"AwardShow": [
+		{
+			"key": "JLXQ",
+			"value": "奖励详情"
+		},
+		{
+			"key": "COMMON",
+			"value": "普通奖励"
+		},
+		{
+			"key": "CHALLENGE",
+			"value": "过关奖励"
+		},
+		{
+			"key": "DISLQ",
+			"value": "不可领取"
+		},
+		{
+			"key": "SURE",
+			"value": "确定"
+		},
+		{
+			"key": "YLQ",
+			"value": "已领取"
+		},
+		{
+			"key": "LQ",
+			"value": "领取"
+		}
+	],
+	"job": [
+		{
+			"key": "0",
+			"value": "无"
+		},
+		{
+			"key": "1",
+			"value": "将军"
+		},
+		{
+			"key": "2",
+			"value": "军师"
+		},
+		{
+			"key": "3",
+			"value": "统领"
+		}
+	],
+	"qulityColor": [
+		{
+			"key": "0",
+			"value": "白色"
+		},
+		{
+			"key": "1",
+			"value": "白色"
+		},
+		{
+			"key": "2",
+			"value": "蓝色"
+		},
+		{
+			"key": "3",
+			"value": "黄色"
+		},
+		{
+			"key": "4",
+			"value": "绿色"
+		},
+		{
+			"key": "5",
+			"value": "紫色"
+		}
+	],
+	"biwu": [
+		{
+			"key": "0",
+			"value": "<u>排名奖励</u>"
+		},
+		{
+			"key": "1",
+			"value": "购买1次比武次数吗?\n（今日已购买次数:$str$）"
+		},
+		{
+			"key": "2",
+			"value": "每周日<font color='0x06ff46'>22点</font>至周一<font color='0x06ff46'>10点</font>为休战时间，周日<font color='0x06ff46'>22：30</font>邮件发放奖励"
+		}
+	],
+	"dailyactive": [
+		{
+			"key": "0",
+			"value": "领取"
+		},
+		{
+			"key": "1",
+			"value": "前往"
+		},
+		{
+			"key": "2",
+			"value": "<font color='0xd6bf86'>进度：$str$<font color='0xffffff'>/$num$"
+		},
+		{
+			"key": "3",
+			"value": "<font color='0xffcc00'>活跃度：$str$<font color='0xffffff'>/$num$"
+		},
+		{
+			"key": "4",
+			"value": "每日<font color='0xff0000'>0点</font>重置日常次数"
+		}
+	],
+	"Belle": [
+		{
+			"key": "0",
+			"value": "当前效果:"
+		},
+		{
+			"key": "1",
+			"value": "下级效果:"
+		},
+		{
+			"key": "2",
+			"value": "激活$name$美人后开启！"
+		},
+		{
+			"key": "3",
+			"value": "请先激活上一位美人"
+		},
+		{
+			"key": "4",
+			"value": "穿戴首饰"
+		},
+		{
+			"key": "5",
+			"value": "结缘"
+		},
+		{
+			"key": "6",
+			"value": "赠送"
+		},
+		{
+			"key": "7",
+			"value": "首饰品质均达到"
+		},
+		{
+			"key": "8",
+			"value": "激活"
+		},
+		{
+			"key": "9",
+			"value": "好感度$lel$级"
+		},
+		{
+			"key": "10",
+			"value": "第$day$天开启($str$)"
+		},
+		{
+			"key": "11",
+			"value": "未满足红颜解锁条件"
+		},
+		{
+			"key": "12",
+			"value": "<font color='$str1$'>发簪 </font><font color='$str2$'>丝巾 </font><font color='$str3$'>耳坠 </font><font color='$str4$'>胸针 </font><font color='$str5$'>手链 </font><font color='$str6$'>银梳 </font><font color='$str7$'>披肩 </font>"
+		}
+	],
+	"Title": [
+		{
+			"key": "0",
+			"value": "青铜"
+		},
+		{
+			"key": "1",
+			"value": "白银"
+		},
+		{
+			"key": "2",
+			"value": "黄金"
+		},
+		{
+			"key": "3",
+			"value": "铂金"
+		},
+		{
+			"key": "4",
+			"value": "钻石"
+		}
+	]
+}

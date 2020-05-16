@@ -16,22 +16,22 @@ var ThiScene = (function (_super) {
         _this.stoneFlag = false;
         var fsm = FsmSet.MapFsm;
         _this.skinName = ThiSceneSkin;
-        _this.btnArr = [_this.gotoBtn, _this.setSBtn, _this.setEBtn, _this.stoneBtn, _this.findBtn, _this.find2Btn, _this.find3Btn, _this.resetBtn, _this.viewBtn];
-        //根据MapSC设置地图大小
+        _this.btnArr = [_this.gotoBtn, _this.setSBtn, _this.setEBtn, _this.stoneBtn,
+            _this.findBtn, _this.find2Btn, _this.find3Btn, _this.resetBtn, _this.viewBtn,
+            _this.breBtn, _this.primBtn];
         _this.mapData = _this.setListFun(_this.mapList, MapItem, _this.mapData);
+        _this.mapList.useVirtualLayout = true;
+        //根据MapSC设置地图大小
         fsm.mapRow = Math.floor(_this.MapSC.width / _this.mapItemT.width);
         fsm.mapCol = Math.floor(_this.MapSC.height / _this.mapItemT.height);
         _this.setMapLayout();
-        _this.createMap();
-        console.log("group is ", _this.group);
         return _this;
     }
     ThiScene.prototype.onComplete = function () {
-        egret.log("第三个场景加载完成");
     };
     ThiScene.prototype.onAdd = function () {
         this.addEvent();
-        this.initPosInfo();
+        this.reset();
     };
     ThiScene.prototype.addEvent = function () {
         this.addE2(this.btnArr, this.touchHander, this);
@@ -129,17 +129,35 @@ var ThiScene = (function (_super) {
                     this.find3Fun();
                 break;
             case this.resetBtn:
-                this.mapData = null;
-                fsm.clearData();
-                this.initPosInfo();
-                this.createMap();
+                this.reset();
                 break;
             case this.viewBtn:
                 fsm.showInfo = !fsm.showInfo;
                 this.mapData.source = fsm.mapData.source;
                 break;
+            case this.breBtn:
+                if (fsm.startMapItem && fsm.endMapItem) {
+                    var res = fsm.bresenHamLine();
+                    for (var _i = 0, res_1 = res; _i < res_1.length; _i++) {
+                        var MI = res_1[_i];
+                        fsm.MIS(MI, MI_STATUS.LINED);
+                    }
+                    fsm.startMapItem = fsm.endMapItem = null;
+                }
+                break;
+            case this.primBtn:
+                this.stoneFlag = !this.stoneFlag;
+                this.reset();
+                fsm.primMap();
+                break;
         }
         this.updatePosInfo();
+    };
+    ThiScene.prototype.reset = function () {
+        var fsm = FsmSet.MapFsm;
+        fsm.clearData();
+        this.initPosInfo();
+        this.createMap();
     };
     //直接演示
     ThiScene.prototype.findFun = function () {
@@ -151,7 +169,6 @@ var ThiScene = (function (_super) {
             fsm.MIS(resMI, MI_STATUS.LINED);
             resMI = resMI.parent;
         }
-        // fsm.bresenHamLine();
         fsm.startMapItem = fsm.endMapItem = null;
     };
     //连续演示
@@ -195,7 +212,7 @@ var ThiScene = (function (_super) {
     ThiScene.prototype.loadMapItem = function (row, col) {
         var mapArr = [];
         var len = row * col;
-        for (var i = 0; i < len; i++) {
+        for (var i = 0; i < len; ++i) {
             var rValue = Math.ceil((i + 1) / row);
             var cValue = i - (rValue - 1) * col + 1;
             var obj = {
@@ -206,9 +223,7 @@ var ThiScene = (function (_super) {
             }; //TODO...
             mapArr.push(obj);
         }
-        if (!this.mapData)
-            this.mapData = this.setListFun(this.mapList, MapItem, this.mapData);
-        this.mapData.replaceAll(mapArr);
+        this.mapData.source = mapArr;
     };
     return ThiScene;
 }(Scene));

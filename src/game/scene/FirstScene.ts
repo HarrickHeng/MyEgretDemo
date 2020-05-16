@@ -16,7 +16,6 @@ class FirstScene extends Scene {
     public constructor() {
         super();
         this.skinName = FirstSceneSkin;
-        console.log("group is ", this.group);
     }
 
     public onComplete() {

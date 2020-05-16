@@ -157,23 +157,19 @@ class MapFsm {
 	/**搜寻周围地图块 */
 	private findNeighbors(): StdMapItem[] {
 		let MIarr: StdMapItem[] = [];
-		for (let i = -1; i < 2; i++) {
-			for (let j = -1; j < 2; j++) {
-				if (i == 0 && j == 0) continue;
-				let row = this._curMapItem.row + i;
-				let col = this._curMapItem.col + j;
-				if (row < 1 || row > this.mapRow || col < 1 || col > this.mapCol)
-					continue; //是否过界
-				let id = this.getIdByOS(this._curMapItem, j, i);
-				let MI = this._mapData.source[id - 1];
-				if (MI && this.checkMI(MI))
-					MIarr.push(MI);
-			}
+		let offX = [0, 0, 1, -1, -1, 1, -1, 1], offY = [1, -1, 0, 0, 1, 1, -1, -1];
+		let len = offX.length
+		for (let i = 0; i < len; ++i) {
+			let id = this.getIdByOS(this._curMapItem, offX[i], offY[i]);
+			let MI = this._mapData.source[id - 1] ? this._mapData.source[id - 1] : null;
+			if (MI && this.checkMI(MI))
+				MIarr.push(MI);
 		}
 		return MIarr;
 	}
 
 	private betterMI: StdMapItem;
+
 	/**地图块检测 */
 	private checkMI(MI: StdMapItem): boolean {
 		let openIdx = this.openList.indexOf(MI);
@@ -194,6 +190,9 @@ class MapFsm {
 	/**获得周围的地图块ID */
 	private getIdByOS(curMI: StdMapItem, offsetX: number, offsetY: number): number {
 		let id: number;
+		//是否过界
+		if (curMI.row + offsetY < 1 || curMI.row + offsetY > this._mapRow) return null;
+		if (curMI.col + offsetX < 1 || curMI.col + offsetX > this._mapCol) return null;
 		switch (offsetX) {
 			case -1:
 				if (offsetY == -1)
@@ -273,47 +272,81 @@ class MapFsm {
 
 	/////////////////////////////////////////布兰森汉姆算法部分///////////////////////////////////
 
-	public BH_List = [];
-	public bresenHamLine(): void {
-		let x1 = this._startMapItem.row;
-		let y1 = this._startMapItem.col;
-		let x2 = this._endMapItem.row;
-		let y2 = this._endMapItem.col;
-		let w = x2 - x1;
-		let h = y2 - y1;
-		let dx = w > 0 ? 1 : -1;
-		let dy = h > 0 ? 1 : -1;
-		w = Math.abs(w);
-		h = Math.abs(h);
-		let f, y, x, delta1, delta2;
-		if (w > h) {
-			f = 2 * h - w;
-			delta1 = 2 * h;
-			delta2 = (h - w) * 2;
-			for (x = x1, y = y1; x != x2; x += dx) {
-				let MI: StdMapItem = new StdMapItem();
-				this.BH_List.push({ row: x, col: y });
-				if (f < 0) {
-					f += delta1;
-				} else {
-					y += dy;
-					f += delta2;
-				}
+	public bresenHamLine(): StdMapItem[] {
+		let path = [];
+		this._curMapItem = this._startMapItem;
+		let y = this._curMapItem.col;
+		let x = this._curMapItem.row;
+		let dy = Math.abs(this._endMapItem.col - this._startMapItem.col);
+		let dx = Math.abs(this._endMapItem.row - this._startMapItem.row);
+		let sy = this._endMapItem.col > this._startMapItem.col ? 1 : -1;
+		let sx = this._endMapItem.row > this._startMapItem.row ? 1 : -1;
+		let interchange = 0;
+		if (dy < dx) { //斜率大于1交换
+			interchange = 1;
+			dy = dy + dx;
+			dx = dy - dx;
+			dy = dy - dx;
+		}
+		let middle = dy;
+		let deltaY = (dx << 1);
+		while (this._curMapItem != this._endMapItem) {
+			if (interchange) x += sx
+			else y += sy;
+			if (deltaY >= middle) {
+				if (interchange) y += sy
+				else x += sx;
+				middle += (dy << 1);
 			}
-		} else {
-			f = 2 * w - h;
-			delta1 = w * 2;
-			delta2 = (w - h) * 2;
-			for (x = x1, y = y1; y != y2; y += dy) {
-				this.BH_List.push({ row: x, col: y });
-				if (f < 0) {
-					f += delta1;
-				} else {
-					x += dx;
-					f += delta2;
+			deltaY += (dx << 1);
+			let id = y + (x - 1) * this._mapRow;
+			this._curMapItem = this._mapData.source[id - 1];
+			path.push(this._curMapItem);
+		}
+		return path;
+	}
+
+	/////////////////////////////////////////随机生成迷宫算法///////////////////////////////////
+
+	public primMap(): void {
+		//全部设墙
+		for (let item of this._mapData.source)
+			this.MIS(item, MI_STATUS.DEFAULT);
+		//acc存放已访问队列，noacc存放没有访问队列
+		let acc = [], noacc = [];
+		//中间格子打通
+		for (let i = 1; i <= this._mapRow; ++i) {
+			for (let j = 1; j <= this._mapCol; ++j) {
+				let id = i + (j - 1) * this._mapRow;
+				if (!(i % 2) && !(j % 2)) {
+					this.MIS(this._mapData.source[id - 1], MI_STATUS.STONE);
+					noacc.push(id)
 				}
 			}
 		}
-		this.BH_List.push({ row: x, col: y });
+		let randIdx = MathUtil.randomRange(0, noacc.length - 1);
+		let pos = noacc[randIdx];
+		acc.push(pos);
+		while (acc.length < noacc.length) {
+			let roundArr = [];
+			let curMI = this._mapData.source[pos - 1];
+			let offX = [0, 0, 1, -1], offY = [1, -1, 0, 0];
+			let len = offX.length
+			for (let i = 0; i < len; ++i) {
+				let id = this.getIdByOS(curMI, offX[i], offY[i]);
+				if (id == null) continue;
+				id = this.getIdByOS(this._mapData.source[id - 1], offX[i], offY[i]);
+				if (id != null && acc.indexOf(id) == -1)
+					roundArr.push(id);
+			}
+			let roundPos = roundArr[MathUtil.randomRange(0, roundArr.length - 1)];
+			if (roundPos) {
+				this.MIS(this._mapData.source[roundPos + (roundPos - pos) / 2 - 1], MI_STATUS.STONE);
+				pos = roundPos;
+				acc.push(roundPos);
+			} else {
+				pos = acc[MathUtil.randomRange(0, acc.length - 1)];
+			}
+		}
 	}
 }

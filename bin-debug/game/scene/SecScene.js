@@ -13,7 +13,6 @@ var SecScene = (function (_super) {
     function SecScene() {
         var _this = _super.call(this) || this;
         _this.skinName = SecSceneSkin;
-        console.log("group is ", _this.group);
         return _this;
     }
     SecScene.prototype.onComplete = function () {

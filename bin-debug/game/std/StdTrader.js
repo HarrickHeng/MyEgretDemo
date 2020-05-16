@@ -70,7 +70,7 @@ var Trader = (function (_super) {
         this.getGoodPrice(good);
         var total = good.price * good.count;
         if (this._money < total) {
-            egret.log(this._name + '不够支付' + total + '元');
+            egret.log(this._name + '不够支付' + good.name + ' X' + good.count + ' ' + total + '元');
             return false;
         }
         return true;
@@ -133,8 +133,9 @@ var Trader = (function (_super) {
                 });
                 selectCity = max.city;
                 if (!selectCity.checkBuy(good)) {
-                    var fixCount = Math.floor(selectCity.money / selectCity.getGoodPrice(good, false));
+                    var fixCount = selectCity.getMAXGoodCount(good, this.money);
                     good.count = fixCount; //城市财政不够时最大化售出数量
+                    console.log(selectCity.name + "最大化购买" + good.name + " X" + good.count);
                 }
                 fsm.exchange(selectCity, this, good);
             }
@@ -153,8 +154,9 @@ var Trader = (function (_super) {
                 });
                 if (max.city !== selectCity) {
                     if (!this.checkBuy(good)) {
-                        var fixCount = Math.floor(this.money / selectCity.getGoodPrice(good, false));
+                        var fixCount = selectCity.getMAXGoodCount(good, this.money);
                         good.count = fixCount; //商人钱不够时最大化购买数量
+                        console.log(this._name + "最大化购买" + good.name + " X" + good.count);
                     }
                     fsm.exchange(this, selectCity, good);
                 }

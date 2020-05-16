@@ -9,7 +9,6 @@ class SecScene extends Scene {
     public constructor() {
         super();
         this.skinName = SecSceneSkin;
-        console.log("group is ", this.group);
     }
 
     public onComplete() {

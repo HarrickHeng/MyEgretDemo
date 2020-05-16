@@ -13,7 +13,6 @@ var PopWinUI = (function (_super) {
     function PopWinUI() {
         var _this = _super.call(this) || this;
         _this.skinName = PopWinSkin;
-        console.log("group is ", _this.group);
         return _this;
     }
     PopWinUI.prototype.onComplete = function () {

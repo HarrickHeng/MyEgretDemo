@@ -74,16 +74,26 @@ var City = (function (_super) {
         if (!this._curGoodIdx)
             this._curGoodIdx = this.getGoodIdx(recgood);
         if (this._curGoodIdx != -1) {
-            var sum = 0;
+            var sum = 0, peopleD = this._people * recgood.demandTend;
             var count = this._goodlist[this._curGoodIdx].count;
-            for (var i = recgood.count; i > 0; i--) {
-                sum += (this._people * recgood.demandTend) / count;
-                count--;
-            }
-            return recgood.price = Math.floor(sum / recgood.count);
+            if (count <= 0)
+                return null;
+            for (var i = 0; i <= count; ++i)
+                sum += peopleD / (count - i + 1);
+            return recgood.price = Math.floor(sum / count);
         }
         else
             return null;
+    };
+    City.prototype.getMAXGoodCount = function (good, money) {
+        var recgood = new Good(good.id, good.name, good.price, good.count, good.demandTend);
+        var sum = 0, peopleD = this._people * recgood.demandTend;
+        var count = this._goodlist[this._curGoodIdx].count;
+        for (var i = 0; i <= count; ++i) {
+            sum += peopleD / (count - i + 1);
+            if (sum >= money)
+                return (count - i);
+        }
     };
     City.prototype.checkBuy = function (good) {
         this._curGoodIdx = this.getGoodIdx(good);
