@@ -189,37 +189,12 @@ var MapFsm = (function () {
     };
     /**获得周围的地图块ID */
     MapFsm.prototype.getIdByOS = function (curMI, offsetX, offsetY) {
-        var id;
         //是否过界
         if (curMI.row + offsetY < 1 || curMI.row + offsetY > this._mapRow)
             return null;
         if (curMI.col + offsetX < 1 || curMI.col + offsetX > this._mapCol)
             return null;
-        switch (offsetX) {
-            case -1:
-                if (offsetY == -1)
-                    id = curMI.id - this._mapCol - 1;
-                else if (offsetY == 0)
-                    id = curMI.id - 1;
-                else if (offsetY == 1)
-                    id = curMI.id + this._mapCol - 1;
-                break;
-            case 0:
-                if (offsetY == -1)
-                    id = curMI.id - this._mapCol;
-                else if (offsetY == 1)
-                    id = curMI.id + this._mapCol;
-                break;
-            case 1:
-                if (offsetY == -1)
-                    id = curMI.id - this._mapCol + 1;
-                else if (offsetY == 0)
-                    id = curMI.id + 1;
-                else if (offsetY == 1)
-                    id = curMI.id + this._mapCol + 1;
-                break;
-        }
-        return id;
+        return curMI.id + this._mapCol * offsetY + offsetX;
     };
     /**赋予F值 */
     MapFsm.prototype.Fcost = function (nextMI) {
@@ -309,7 +284,7 @@ var MapFsm = (function () {
         }
         return path;
     };
-    /////////////////////////////////////////随机生成迷宫算法///////////////////////////////////
+    /////////////////////////////////////////普里姆算法///////////////////////////////////
     MapFsm.prototype.primMap = function () {
         //全部设墙
         for (var _i = 0, _a = this._mapData.source; _i < _a.length; _i++) {
@@ -330,23 +305,25 @@ var MapFsm = (function () {
         }
         var randIdx = MathUtil.randomRange(0, noacc.length - 1);
         var pos = noacc[randIdx];
+        this.startMapItem =
+            this.MIS(this._mapData.source[pos - 1], MI_STATUS.START);
         acc.push(pos);
         while (acc.length < noacc.length) {
             var roundArr = [];
             var curMI = this._mapData.source[pos - 1];
-            var offX = [0, 0, 1, -1], offY = [1, -1, 0, 0];
-            var len = offX.length;
-            for (var i = 0; i < len; ++i) {
+            var offX = [0, 0, 2, -2], offY = [2, -2, 0, 0];
+            for (var i = 0, len = offX.length; i < len; ++i) {
                 var id = this.getIdByOS(curMI, offX[i], offY[i]);
-                if (id == null)
-                    continue;
-                id = this.getIdByOS(this._mapData.source[id - 1], offX[i], offY[i]);
                 if (id != null && acc.indexOf(id) == -1)
                     roundArr.push(id);
             }
             var roundPos = roundArr[MathUtil.randomRange(0, roundArr.length - 1)];
             if (roundPos) {
                 this.MIS(this._mapData.source[roundPos + (roundPos - pos) / 2 - 1], MI_STATUS.STONE);
+                if (acc.length == noacc.length - 1) {
+                    this.endMapItem =
+                        this.MIS(this._mapData.source[pos - 1], MI_STATUS.END);
+                }
                 pos = roundPos;
                 acc.push(roundPos);
             }

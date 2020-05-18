@@ -15,7 +15,7 @@ class Distributor implements IDistributor {
 		this._IdlePool = {};
 		this._UsedPool = {};
 	}
-
+	
 	public distribution(val: IBall): void {
 		if (val.isIdle) {
 			this._IdlePool[val.hashc] = val;
