@@ -138,7 +138,7 @@ class MapFsm {
 		this.openList.splice(idx, 1);
 		this.closeList.push(this._curMapItem);
 		this.MIS(this._curMapItem, MI_STATUS.CLOSED);
-		let neighbors: StdMapItem[] = this.findNeighbors();
+		let neighbors: StdMapItem[] = this.findNeighbors(this._curMapItem);
 		//邻居检查
 		neighbors.forEach(MI => {
 			if (this.openList.indexOf(MI) == -1) {
@@ -155,12 +155,12 @@ class MapFsm {
 	}
 
 	/**搜寻周围地图块 */
-	private findNeighbors(): StdMapItem[] {
+	private findNeighbors(curMapItem: StdMapItem): StdMapItem[] {
 		let MIarr: StdMapItem[] = [];
 		let offX = [0, 0, 1, -1, -1, 1, -1, 1], offY = [1, -1, 0, 0, 1, 1, -1, -1];
 		let len = offX.length
 		for (let i = 0; i < len; ++i) {
-			let id = this.getIdByOS(this._curMapItem, offX[i], offY[i]);
+			let id = this.getIdByOS(curMapItem, offX[i], offY[i]);
 			let MI = this._mapData.source[id - 1] ? this._mapData.source[id - 1] : null;
 			if (MI && this.checkMI(MI))
 				MIarr.push(MI);

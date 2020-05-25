@@ -11,8 +11,8 @@ class SecScene extends Scene {
         this.skinName = SecSceneSkin;
     }
 
-    public onComplete() {
-        egret.log("第二个场景加载完成");
+    protected initSkin() {
+        super.initSkin();
     }
 
     public onAdd() {

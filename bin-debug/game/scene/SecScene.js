@@ -15,8 +15,8 @@ var SecScene = (function (_super) {
         _this.skinName = SecSceneSkin;
         return _this;
     }
-    SecScene.prototype.onComplete = function () {
-        egret.log("第二个场景加载完成");
+    SecScene.prototype.initSkin = function () {
+        _super.prototype.initSkin.call(this);
     };
     SecScene.prototype.onAdd = function () {
         this.addE(this, this.update, this, egret.Event.ENTER_FRAME);

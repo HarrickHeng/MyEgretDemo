@@ -15,10 +15,11 @@ var PopWinUI = (function (_super) {
         _this.skinName = PopWinSkin;
         return _this;
     }
-    PopWinUI.prototype.onComplete = function () {
-        egret.log("弹窗加载完成");
+    PopWinUI.prototype.initSkin = function () {
+        _super.prototype.initSkin.call(this);
     };
     PopWinUI.prototype.onAdd = function () {
+        _super.prototype.onAdd.call(this);
         this.addE(this.closeBtn, this.touchHander, this);
     };
     PopWinUI.prototype.onExit = function () {

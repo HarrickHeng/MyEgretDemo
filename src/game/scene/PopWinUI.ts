@@ -7,11 +7,12 @@ class PopWinUI extends Scene {
         this.skinName = PopWinSkin;
     }
 
-    public onComplete() {
-        egret.log("弹窗加载完成");
+    protected initSkin() {
+        super.initSkin();
     }
 
     public onAdd() {
+        super.onAdd();
         this.addE(this.closeBtn, this.touchHander, this);
     }
 

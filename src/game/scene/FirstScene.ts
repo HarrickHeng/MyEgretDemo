@@ -18,8 +18,8 @@ class FirstScene extends Scene {
         this.skinName = FirstSceneSkin;
     }
 
-    public onComplete() {
-        egret.log("第一个场景加载完成");
+    protected initSkin() {
+        super.initSkin();
     }
 
     public onAdd() {

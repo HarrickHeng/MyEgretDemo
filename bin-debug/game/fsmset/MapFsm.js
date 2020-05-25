@@ -140,7 +140,7 @@ var MapFsm = (function () {
         this.openList.splice(idx, 1);
         this.closeList.push(this._curMapItem);
         this.MIS(this._curMapItem, MI_STATUS.CLOSED);
-        var neighbors = this.findNeighbors();
+        var neighbors = this.findNeighbors(this._curMapItem);
         //邻居检查
         neighbors.forEach(function (MI) {
             if (_this.openList.indexOf(MI) == -1) {
@@ -157,12 +157,12 @@ var MapFsm = (function () {
             return this._endMapItem;
     };
     /**搜寻周围地图块 */
-    MapFsm.prototype.findNeighbors = function () {
+    MapFsm.prototype.findNeighbors = function (curMapItem) {
         var MIarr = [];
         var offX = [0, 0, 1, -1, -1, 1, -1, 1], offY = [1, -1, 0, 0, 1, 1, -1, -1];
         var len = offX.length;
         for (var i = 0; i < len; ++i) {
-            var id = this.getIdByOS(this._curMapItem, offX[i], offY[i]);
+            var id = this.getIdByOS(curMapItem, offX[i], offY[i]);
             var MI = this._mapData.source[id - 1] ? this._mapData.source[id - 1] : null;
             if (MI && this.checkMI(MI))
                 MIarr.push(MI);

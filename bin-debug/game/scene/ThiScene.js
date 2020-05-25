@@ -27,7 +27,8 @@ var ThiScene = (function (_super) {
         _this.setMapLayout();
         return _this;
     }
-    ThiScene.prototype.onComplete = function () {
+    ThiScene.prototype.initSkin = function () {
+        _super.prototype.initSkin.call(this);
     };
     ThiScene.prototype.onAdd = function () {
         this.addEvent();

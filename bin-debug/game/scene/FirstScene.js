@@ -17,8 +17,8 @@ var FirstScene = (function (_super) {
         _this.skinName = FirstSceneSkin;
         return _this;
     }
-    FirstScene.prototype.onComplete = function () {
-        egret.log("第一个场景加载完成");
+    FirstScene.prototype.initSkin = function () {
+        _super.prototype.initSkin.call(this);
     };
     FirstScene.prototype.onAdd = function () {
         this.addE(this.testPoint, this.down, this, egret.TouchEvent.TOUCH_BEGIN);

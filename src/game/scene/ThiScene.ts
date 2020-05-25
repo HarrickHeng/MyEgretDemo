@@ -41,7 +41,8 @@ class ThiScene extends Scene {
         this.setMapLayout();
     }
 
-    public onComplete() {
+    protected initSkin() {
+        super.initSkin();
     }
 
     public onAdd() {
